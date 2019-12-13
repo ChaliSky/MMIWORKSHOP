@@ -1,0 +1,144 @@
+:root{
+
+    /* COLORS */
+    --main-color: white;
+    --black-color: black;
+    --dark-color: #001C3A;
+    --yellow-color:#FFC900;
+    --orange-color:#FF9929;
+    --red-color:#FA214D;
+    --blue-color:#0A5961;
+    --light-blue-color:#3992A0;
+
+}
+
+html{
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Helvetica', sans-serif;
+    font: 300 1.6rem/1.6;
+    color: var(--dark-color);
+    text-align: center;
+}
+
+/* TITLES */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Helvetica', sans-serif;
+    font-weight: Bold;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 81px;
+    line-height: 97px;
+    margin: 0;
+}
+h2{
+    font-size: 3rem;
+    line-height: 1.4;
+}
+h3{
+    font-size: 2rem;
+}
+
+/* BASES */
+
+img {
+    /*responsive img*/
+      max-width: 100%;
+      height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.unstyled{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* HEADER */
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+  }
+
+header > h1 {
+    text-align: left;
+    grid-column: 2 / span 2;
+}
+header > p {
+    color: var(--light-blue-color);
+    font-weight: Bold;
+    text-transform: uppercase;
+    font-size: 26px;
+    grid-column: 2 / span 2;
+}
+
+header > a.button_creation {
+    grid-column: 2 / span 1;
+}
+
+header > a.icon_logo {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 2;
+}
+
+
+
+/* NAV */
+
+nav.nav_principale{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: var(--main-color);
+    overflow: hidden;
+    width: 100%;
+}
+nav ul{
+    text-transform: uppercase;
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav a:hover {
+    border-bottom: solid 3px var(--orange-color);
+    border-radius:2px;
+}
+
+nav ul li{   
+    flex: 1;
+    padding: 0;
+    margin: 0;
+}
+
+li a{
+    display: block;
+    margin: 0;
+}
+
+/* MAIN */
+
+main{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
+}
