@@ -142,3 +142,18 @@ main{
     justify-content: center;
     grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
 }
+
+section.workshop_termines, section.workshop_a_venir {
+    grid-column: 2 / span 3;
+}
+
+section.contact{
+    grid-column: 1 / span 5;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: var(--blue-color);
+}
