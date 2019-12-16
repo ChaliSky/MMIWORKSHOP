@@ -33,14 +33,15 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Helvetica', sans-serif;
     font-weight: Bold;
     text-transform: uppercase;
+    margin: 0;
 }
 h1{
-    font-size: 81px;
+    font-size: 80px;
     line-height: 97px;
     margin: 0;
 }
 h2{
-    font-size: 3rem;
+    font-size: 60px;
     line-height: 1.4;
 }
 h3{
@@ -65,6 +66,45 @@ a{
     margin: 0;
     padding: 0;
 }
+
+.ws-btn{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 32px;
+    justify-content: center;
+    align-self: center;
+    padding: 15px;
+}
+
+.ws-btn-red{
+    color: var(--red-color);
+    border: solid 1px var(--red-color);
+}
+.ws-btn-red:hover{
+    background-color: var(--red-color);
+    color: var(--main-color);
+}
+
+.ws-btn-yellow{
+    color: var(--yellow-color);
+    border: solid 1px var(--yellow-color);
+}
+.ws-btn-yellow:hover{
+    background-color: var(--yellow-color);
+    color: var(--main-color);
+}
+
+.ws-btn-dark{
+    color: var(--dark-color);
+    border: solid 1px var(--dark-color);
+}
+.ws-btn-dark:hover{
+    background-color: var(--dark-color);
+    color: var(--main-color);
+}
+
+
 /* HEADER */
 
 
@@ -76,12 +116,13 @@ header{
   }
 
 header > h1 {
+    margin-top: 15vh;
     text-align: left;
     grid-column: 2 / span 2;
 }
 header > p {
     color: var(--light-blue-color);
-    font-weight: Bold;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 26px;
     grid-column: 2 / span 2;
@@ -108,7 +149,7 @@ nav.nav_principale{
     overflow: hidden;
     width: 100%;
 }
-header nav ul{
+header nav.nav_principale ul{
     text-transform: uppercase;
     display: flex;
     justify-content:flex-end;
@@ -117,12 +158,12 @@ header nav ul{
     grid-column: 3 / span 3;
 }
 
-header > nav a:hover {
+header > nav.nav_principale a:hover {
     border-bottom: solid 3px var(--orange-color);
     border-radius:2px;
 }
 
-header > nav ul li{
+header > nav.nav_principale ul li{
     padding-left:5px;
     padding-right: 5px;
     padding-top: 20px;
@@ -144,12 +185,16 @@ main{
     grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
 }
 
-section.workshop_termines, section.workshop_a_venir {
-    grid-column: 2 / span 3;
+.ws_annexe > p{
+    color: var(--red-color);
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 38px;
 }
 
-section.contact{
-    grid-column: 1 / span 5;
+.ws_annexe > a {
+    margin-top: 100px;
 }
 
 
@@ -161,4 +206,70 @@ footer{
 
 footer *{
   color: var(--main-color);
+}
+
+/* POSITIONNEMENT */
+
+/* HOME PAGE */
+
+/* WORKSHOP */
+
+section.workshop_termines, section.workshop_a_venir {
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-rows: minmax(0,auto);
+}
+
+/* WORKSHOP TERMINES */
+
+section.workshop_termines .ws_annexe{
+    grid-column: 3 / span 1;
+    grid-row: 1;
+}
+
+section.workshop_termines .ws_annexe > p{
+    text-align: right;
+}
+section.workshop_termines .ws_annexe > h2{
+    text-align: left;
+}
+
+
+section.workshop_termines .ws_info{
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+
+section.workshop_termines .ws_carrousel{
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+/* WORKSHOP A VENIR */
+
+section.workshop_a_venir .ws_annexe{
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+section.workshop_a_venir .ws_annexe > p{
+    text-align: left;
+}
+section.workshop_a_venir .ws_annexe > h2 {
+    text-align: right;
+}
+
+section.workshop_a_venir .ws_info{
+    grid-column: 3 / span 1;
+    grid-row: 1;
+}
+
+section.workshop_a_venir .ws_carrousel{
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+/* CONTACT */
+
+section.contact{
+    grid-column: 1 / span 5;
 }
