@@ -1,0 +1,253 @@
+/* BUREAU */
+
+@media screen and (min-width:700px){
+
+    /* ELEMENTS DIFFERENTS DE MOBILE */
+
+    /* HEADER */
+
+    header > div.title_homepage{
+        margin-top: 20vh;
+    }
+
+    header > #header_nav a.logo{
+        position: absolute;
+        text-align: left;
+        top: 20px;
+        bottom: 0;
+        left: 20px;
+        font-weight: 700;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    #header_nav{
+        display: block;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        overflow: hidden;
+        width: 100%;
+        height: 15vh;
+        visibility: visible;
+    }
+    header #header_nav ul{
+        text-transform: uppercase;
+        display: flex;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    
+    header > #header_nav ul li a:hover {
+        border-bottom: solid 3px var(--orange-color);
+        border-radius:2px;
+    }
+    
+    header > #header_nav ul li{
+        padding-left:5px;
+        padding-right: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-right: 40px;
+    }
+
+    .nav-toggle{
+        display: none;
+    }
+
+    li a{
+        display: block;
+        margin: 0;
+    }
+
+    /* SVG */
+
+    .svg_1{
+        z-index: -1;
+        position: absolute;
+        left: -5vw;
+        top: -2vh;
+        display: block;
+        height: 130vh;
+    }
+
+
+    /* POSITIONNEMENT */
+
+    /* HEADER */
+
+    header{
+        display: grid;
+        grid-template-columns: 1fr repeat(4,minmax(0,260px)) 1fr;
+        grid-gap: 20px;
+    }
+
+    header > div.title_homepage{
+        grid-column: 2 / span 2;
+    }
+
+    header > a.button_creation {
+        grid-column: 2 / span 1;
+    }
+
+    header > svg.icon_logo {
+        margin-top: 20vh;
+        grid-column: 4 / span 2;
+        grid-row: 1 / span 2;
+    }
+
+    /* MAIN */
+
+    main{
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
+    }
+
+    /* WORKSHOP */
+
+    section.workshop_termines, section.workshop_a_venir {
+        grid-column: 2 / span 3;
+        display: grid;
+        grid-template-rows: minmax(0,auto);
+    }
+
+    /* WORKSHOP TERMINES */
+
+    section.workshop_termines .ws_annexe{
+        grid-column: 3 / span 1;
+        grid-row: 1;
+    }
+
+    section.workshop_termines .ws_annexe > p{
+        text-align: right;
+    }
+    section.workshop_termines .ws_annexe > h2{
+        text-align: left;
+    }
+
+
+    section.workshop_termines .ws_info{
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+
+    section.workshop_termines .ws_carrousel{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    /* WORKSHOP A VENIR */
+
+    section.workshop_a_venir .ws_annexe{
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+    section.workshop_a_venir .ws_annexe > p{
+        text-align: left;
+    }
+    section.workshop_a_venir .ws_annexe > h2 {
+        text-align: right;
+    }
+
+    section.workshop_a_venir .ws_info{
+        grid-column: 3 / span 1;
+        grid-row: 1;
+    }
+
+    section.workshop_a_venir .ws_carrousel{
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    /* CONTACT */
+
+    section.contact{
+        grid-column: 1 / span 5;
+    }
+
+    
+}
+
+/* MOBILE */
+
+@media screen and (max-width:700px){
+
+    /* NAV */
+
+    #header_nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: var(--dark-color);
+        /* transition: all 0.6s ease-in-out; */
+        visibility: hidden;
+        z-index: 99;
+    }
+    #header_nav.open {
+        visibility:visible;
+    }
+    #header_nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    #header_nav ul li{
+        margin-bottom: 30px;
+    }
+
+    #header_nav ul li a{
+        color: var(--main-color);
+    }
+
+    header > #header_nav a.logo{
+        display: none;
+        text-align: center;
+        top: 20px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-weight: 700;
+        font-size: 2rem;
+        text-transform: uppercase;
+        display: block;
+        color: var(--main-color);
+    }
+
+    header > #header_nav a.logo.active{
+        display: block;
+    }
+
+    /* NAV BUTTON */
+
+    .nav-toggle{
+        font-size: 30px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 999;  
+    }
+
+    .nav-toggle.active{
+        position: fixed;
+    }
+
+    .nav-toggle.active > i {
+        color: var(--main-color);
+    }
+
+}
