@@ -168,12 +168,16 @@ section.contact div.address_contact h2{
 
 section.contact div.address_contact h4{
     margin-bottom: 20px;
-    color: var(--orange-color); 
+    color: var(--orange-color);
 }
 section.contact div.address_contact h4, section.contact div.address_contact p{
     text-transform: uppercase;
 }
-
+/*list-c-*/
+li {
+  list-style: none;
+  text-decoration: none;
+}
 
 /* MAP */
 
@@ -188,7 +192,7 @@ iframe{
 
 footer *{
     font-size: 1.25rem;
-    color: var(--main-color); 
+    color: var(--main-color);
 }
 
 footer a:hover{
