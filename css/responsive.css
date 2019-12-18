@@ -166,7 +166,18 @@
     /* CONTACT */
 
     section.contact{
-        grid-column: 1 / span 5;
+        grid-column: 2 / span 3;
+        display: grid;
+        grid-template-rows: minmax(0,auto);
+    }
+
+    section.contact iframe{
+        grid-column: 2 / span 1;
+        grid-row: 1;
+    }
+    section.contact .address_contact{
+        grid-column: 3 / span 1;
+        grid-row: 1;
     }
 
     /* FOOTER */
@@ -191,7 +202,7 @@
 
     .footer_address *, .footer_nav ul, .footer_nav_secondaire ul {
         position: relative;
-        top: calc(30vh/2.5);
+        top: 400px;
         text-align: left;
     }
 
