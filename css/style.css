@@ -25,6 +25,7 @@ body{
     font: 300 1.6rem/1.6;
     color: var(--dark-color);
     text-align: center;
+    background-size:100%;
 }
 
 /* TITLES */
@@ -131,18 +132,17 @@ section.workshop_termines .ws_info, section.workshop_a_venir .ws_info {
     text-align: left;
 }
 
-section.workshop_termines .ws_info:hover{
-    left: 50px;
-    top: 34vh;
-    height: 20vh;
-}
-
 .carousel-indicators.car-red li {
     background-color: var(--red-color);
 }
 
 .carousel-indicators.car-yellow li{
     background-color: var(--yellow-color);
+}
+
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
 }
 
 .ws_annexe > p{
@@ -159,7 +159,7 @@ section.workshop_termines .ws_info:hover{
 /* SECTION */
 
 section{
-    margin: 20px 0;
+    margin: 100px 0;
 }
 
 section.contact{

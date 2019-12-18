@@ -1,8 +1,12 @@
 /* BUREAU */
 
-@media screen and (min-width:700px){
+@media screen and (min-width:850px){
 
-    /* ELEMENTS DIFFERENTS DE MOBILE */
+    /* ELEMENTS */
+
+    body{        
+        background: url(images/Backgroundbureau.svg) no-repeat;
+    }    
 
     /* HEADER */
 
@@ -62,50 +66,6 @@
         margin: 0;
     }
 
-    /* SVG */
-
-    /* .svg_1, .svg_2, .svg_3, .svg_4, .svg_5, .svg_6{   
-        position: absolute;        
-        display: block;
-    }
-
-    .svg_1{
-        left: -2vw;
-        top: -2vh;
-        height: 130vh;
-    }
-
-    .svg_2{
-        right: 0;
-        top: -10vh;
-        height: 80vh;
-    }
-
-    .svg_3{
-        left: -40vw;
-        z-index: -99;
-        height: 50vh;
-    }
-    
-    .svg_4{
-        right: 0;
-        height: 60vh;
-    }
-
-    .svg_5{
-        right: 0;
-        top: 10vh;
-        z-index: -2;
-        height: 100vh;
-    }
-
-    .svg_6{
-        left: -40vw;
-        bottom: -200vh;
-        right: 0;
-        height: 50vh;
-    } */
-
     /* POSITIONNEMENT */
 
     /* HEADER */
@@ -125,7 +85,7 @@
     }
 
     header > svg.icon_logo {
-        margin-top: 20vh;
+        margin-top: 10vh;
         grid-column: 4 / span 2;
         grid-row: 1 / span 2;
     }
@@ -137,6 +97,11 @@
         grid-gap: 20px;
         justify-content: center;
         grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
+    }
+
+    div.carousel-item {
+        z-index: 999;
+        /* background: -webkit-linear-gradient(right, rgba(255,255,255,0) 28%,rgba(255,255,255,0) 31%,rgba(255,255,255,1) 90%); */
     }
 
     div.carousel-item > img {
@@ -152,6 +117,7 @@
         grid-template-rows: minmax(0,auto);
     }
 
+    
     /* WORKSHOP TERMINES */
 
     section.workshop_termines .ws_annexe{
@@ -181,20 +147,23 @@
     section.workshop_termines .ws_info{
         grid-column: 1 / span 1;
         grid-row: 1;
-    }
-
-    section.workshop_termines .ws_carrousel{
-        grid-column: 1 / span 2;
-        grid-row: 1;
-    }
-
-    section.workshop_termines .ws_info{
         left: 50px;
         top: 40vh;
         height: 14vh;
         transition: 0.5s ease-in-out;
         width: 14vw;
     }
+
+    section.workshop_termines .ws_info:hover{
+        left: 50px;
+        top: 34vh;
+        height: 20vh;
+    }
+
+    section.workshop_termines .ws_carrousel{
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }    
 
     /* WORKSHOP A VENIR */
 
@@ -220,6 +189,10 @@
     section.workshop_a_venir .ws_info{
         grid-column: 3 / span 1;
         grid-row: 1;
+        height: 25vh;
+        top: 30vh;
+        left: -50px;
+        width: 14vw;
     }
 
     section.workshop_a_venir .ws_carrousel{
@@ -229,15 +202,7 @@
 
     section.workshop_a_venir .ws_annexe > a{
         top: 100px;
-    }
-
-    section.workshop_a_venir .ws_info{
-        height: 25vh;
-        top: 30vh;
-        left: -50px;
-        width: 14vw;
-    }
-    
+    }    
 
     /* CONTACT */
 
@@ -264,6 +229,8 @@
         grid-template-columns: 1fr repeat(3,minmax(0,260px)) 1fr;
         grid-gap: 2vw;
         position: relative;
+        background-size:100% 100%;
+        background-image: url(images/footerpetit.svg) no-repeat;
     }
     footer * {
         grid-row: 1;
@@ -302,7 +269,15 @@
 
 /* MOBILE */
 
-@media screen and (max-width:700px){
+@media screen and (max-width:850px){
+
+    /* ELEMENTS */
+
+    body{        
+        background: url(images/Backgroundmobil.svg) no-repeat;        
+        background-size:100%;
+    }    
+
 
     /* NAV */
 
@@ -389,7 +364,27 @@
         position: relative;
         top: 40px;
     }
+
+    section.workshop_termines .ws_info, section.workshop_a_venir .ws_info{
+        width: 40%;
+        position: relative;
+        top: -40px;
+        left: 55%;
+    }
     
+    div.carousel-item > img {
+        height: 30vh;
+        width: 80vw!important;
+        margin-left: auto;
+        margin-right: auto;                
+    }
+
+    .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+        fill: var(--dark-color);
+        fill-opacity:1;
+    }
+    
+
     /* FOOTER */
 
     .footer_address, .footer_nav, .footer_nav_secondaire{
