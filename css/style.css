@@ -123,6 +123,20 @@ header div.title_homepage p {
 
 /* MAIN */
 
+section.workshop_termines .ws_info, section.workshop_a_venir .ws_info {
+    z-index: 99;
+    background-color: white;    
+    position: relative;   
+    padding: 15px;
+    text-align: left;
+}
+
+section.workshop_termines .ws_info:hover{
+    left: 50px;
+    top: 34vh;
+    height: 20vh;
+}
+
 .carousel-indicators.car-red li {
     background-color: var(--red-color);
 }
@@ -140,10 +154,6 @@ header div.title_homepage p {
 
 .ws_annexe > a {
     margin-top: 100px;
-}
-
-div.carousel-item > img {
-    height: 50vh;
 }
 
 /* SECTION */
@@ -198,9 +208,10 @@ footer a:hover{
 
 /* SVG */
 
-.svg_1{
+/* .svg_1, .svg_2, .svg_3, .svg_4, .svg_5, .svg_6{
     display: none;
-}
+    z-index: -1;
+} */
 
 .svg_footer{
     width: 100vw;

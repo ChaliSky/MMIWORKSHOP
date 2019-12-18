@@ -64,15 +64,47 @@
 
     /* SVG */
 
-    .svg_1{
-        z-index: -1;
-        position: absolute;
-        left: -5vw;
-        top: -2vh;
+    /* .svg_1, .svg_2, .svg_3, .svg_4, .svg_5, .svg_6{   
+        position: absolute;        
         display: block;
+    }
+
+    .svg_1{
+        left: -2vw;
+        top: -2vh;
         height: 130vh;
     }
 
+    .svg_2{
+        right: 0;
+        top: -10vh;
+        height: 80vh;
+    }
+
+    .svg_3{
+        left: -40vw;
+        z-index: -99;
+        height: 50vh;
+    }
+    
+    .svg_4{
+        right: 0;
+        height: 60vh;
+    }
+
+    .svg_5{
+        right: 0;
+        top: 10vh;
+        z-index: -2;
+        height: 100vh;
+    }
+
+    .svg_6{
+        left: -40vw;
+        bottom: -200vh;
+        right: 0;
+        height: 50vh;
+    } */
 
     /* POSITIONNEMENT */
 
@@ -107,9 +139,14 @@
         grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
     }
 
+    div.carousel-item > img {
+        height: 50vh;
+    }
+    
     /* WORKSHOP */
 
     section.workshop_termines, section.workshop_a_venir {
+        position: relative;
         grid-column: 2 / span 3;
         display: grid;
         grid-template-rows: minmax(0,auto);
@@ -151,6 +188,14 @@
         grid-row: 1;
     }
 
+    section.workshop_termines .ws_info{
+        left: 50px;
+        top: 40vh;
+        height: 14vh;
+        transition: 0.5s ease-in-out;
+        width: 14vw;
+    }
+
     /* WORKSHOP A VENIR */
 
     section.workshop_a_venir .ws_annexe{
@@ -186,12 +231,21 @@
         top: 100px;     
     }
 
+    section.workshop_a_venir .ws_info{
+        height: 25vh;
+        top: 30vh;
+        left: -50px;
+        width: 14vw;
+    }
+    
+
     /* CONTACT */
 
     section.contact{
         grid-column: 2 / span 3;
         display: grid;
         grid-template-rows: minmax(0,auto);
+        position: relative;
     }
 
     section.contact iframe{
@@ -331,6 +385,10 @@
 
     /* MAIN */
 
+    .button_creation{
+        position: relative;
+        top: 40px;
+    }
     
     /* FOOTER */
 
