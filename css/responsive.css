@@ -303,6 +303,11 @@
         display: block;
     }
 
+    header > svg.icon_logo{
+        height: 40vh;
+        width: 40vw;
+    }
+
     /* NAV BUTTON */
 
     .nav-toggle{
@@ -324,6 +329,9 @@
         color: var(--main-color);
     }
 
+    /* MAIN */
+
+    
     /* FOOTER */
 
     .footer_address, .footer_nav, .footer_nav_secondaire{
