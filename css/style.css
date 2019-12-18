@@ -47,7 +47,7 @@ h3{
     font-size: 2rem;
 }
 
-/* BASES */
+/* COMPOSANTS */
 
 img {
     /*responsive img*/
@@ -107,12 +107,10 @@ a, a:hover{
 
 /* HEADER */
 
-
 header{
     justify-content: center;
     margin: 10vh 0;
 }
-
 header > div.title_homepage {
     text-align: left;
 }
@@ -142,17 +140,27 @@ div.carousel-item > img {
 
 /* FOOTER */
 
-footer{
-    background-color: var(--dark-color);
-}
-
 footer *{
-  color: var(--main-color);
+    font-size: 1.25rem;
+    color: var(--main-color); 
 }
 
+footer a:hover{
+    color: var(--orange-color);
+}
 
 /* SVG */
 
 .svg_1{
     display: none;
+}
+
+.svg_footer{
+    width: 100vw;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
 }
