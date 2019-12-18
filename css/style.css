@@ -202,12 +202,7 @@ iframe{
 
 footer *{
     font-size: 1.25rem;
-<<<<<<< HEAD
     color: var(--main-color);
-=======
-    color: var(--main-color); 
-    text-align: left;
->>>>>>> fa7aef9a6bdc6c247801bcc52af11a5bac85ec22
 }
 
 footer a:hover{
