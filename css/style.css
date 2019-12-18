@@ -123,6 +123,14 @@ header div.title_homepage p {
 
 /* MAIN */
 
+.carousel-indicators.car-red li {
+    background-color: var(--red-color);
+}
+
+.carousel-indicators.car-yellow li{
+    background-color: var(--yellow-color);
+}
+
 .ws_annexe > p{
     color: var(--red-color);
     text-transform: uppercase;
@@ -136,6 +144,44 @@ header div.title_homepage p {
 
 div.carousel-item > img {
     height: 50vh;
+}
+
+/* SECTION */
+
+section{
+    margin: 20px 0;
+}
+
+section.contact{
+    text-align: left;
+}
+
+section.contact div.address_contact{
+    font-size: 1.125rem;
+    padding-left: 50px;
+}
+
+section.contact div.address_contact h2{
+    font-size: 3.75rem;
+    margin-bottom: 20px;
+}
+
+section.contact div.address_contact h4{
+    margin-bottom: 20px;
+    color: var(--orange-color); 
+}
+section.contact div.address_contact h4, section.contact div.address_contact p{
+    text-transform: uppercase;
+}
+
+
+/* MAP */
+
+iframe{
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
 }
 
 /* FOOTER */
