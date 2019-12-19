@@ -25,7 +25,6 @@ body{
     font: 300 1.6rem/1.6;
     color: var(--dark-color);
     text-align: center;
-    background-size:100%;
 }
 
 /* TITLES */
@@ -145,6 +144,10 @@ section.workshop_termines .ws_info, section.workshop_a_venir .ws_info {
     height: 40px;
 }
 
+.carousel-indicators{
+    bottom: -50px!important;
+}
+
 .ws_annexe > p{
     color: var(--red-color);
     text-transform: uppercase;
@@ -154,6 +157,10 @@ section.workshop_termines .ws_info, section.workshop_a_venir .ws_info {
 
 .ws_annexe > a {
     margin-top: 100px;
+}
+
+section.workshop_termines .ws_info > p {
+    margin-bottom: 3rem;
 }
 
 /* SECTION */
@@ -183,7 +190,6 @@ section.contact div.address_contact h4{
 section.contact div.address_contact h4, section.contact div.address_contact p{
     text-transform: uppercase;
 }
-/*list-c-*/
 li {
   list-style: none;
   text-decoration: none;
@@ -210,11 +216,6 @@ footer a:hover{
 }
 
 /* SVG */
-
-/* .svg_1, .svg_2, .svg_3, .svg_4, .svg_5, .svg_6{
-    display: none;
-    z-index: -1;
-} */
 
 .svg_footer{
     width: 100vw;

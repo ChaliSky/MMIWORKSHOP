@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    // Menu
+
     var toggle = document.querySelector(".nav-toggle");
     var menu = document.querySelector("#header_nav");
     var icon = document.querySelector("#header_nav a.logo");
@@ -13,12 +15,5 @@ $(document).ready(function(){
 
     $('.nav-toggle').click(doToggle);
 
-
-    // $('.nav-toggle').click(function(){
-    //     toggle.html('<i class="fas fa-bars"></i>');
-    // },
-    // function(){
-    //     toggle.html('<i class="fas fa-times"></i>');
-    // });
 
 });

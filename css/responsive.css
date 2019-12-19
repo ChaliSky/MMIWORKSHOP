@@ -6,6 +6,7 @@
 
     body{        
         background: url(images/Backgroundbureau.svg) no-repeat;
+        background-size:100%;
     }    
 
     /* HEADER */
@@ -147,17 +148,17 @@
     section.workshop_termines .ws_info{
         grid-column: 1 / span 1;
         grid-row: 1;
-        left: 50px;
-        top: 40vh;
-        height: 14vh;
+        left: 50px;    
+        top: 35vh;
+        height: 20vh;
         transition: 0.5s ease-in-out;
         width: 14vw;
     }
 
     section.workshop_termines .ws_info:hover{
         left: 50px;
-        top: 34vh;
-        height: 20vh;
+        top: 30vh;
+        height: 25vh;
     }
 
     section.workshop_termines .ws_carrousel{
@@ -229,12 +230,14 @@
         grid-template-columns: 1fr repeat(3,minmax(0,260px)) 1fr;
         grid-gap: 2vw;
         position: relative;
-        background-size:100% 100%;
-        background-image: url(images/footerpetit.svg) no-repeat;
-    }
+        /* background-size:100% 100%;
+        background-position: bottom;
+        background-image: url(images/footerpetit.svg) no-repeat; */
+       }
     footer * {
         grid-row: 1;
     }
+    
     .footer_address{
         grid-column: 2 / span 1;
     }
@@ -386,6 +389,13 @@
     
 
     /* FOOTER */
+
+    /* footer{
+        background-image: url(images/footermobil.svg) no-repeat;
+        background-position: bottom;
+        background-size: 100% 100%;
+        z-index: 99;
+    } */
 
     .footer_address, .footer_nav, .footer_nav_secondaire{
         background-color: var(--dark-color);
