@@ -121,89 +121,6 @@ header div.title_homepage p {
     font-size: 1.625rem;
 }
 
-/* MAIN */
-
-section.workshop_termines .ws_info, section.workshop_a_venir .ws_info {
-    z-index: 99;
-    background-color: white;    
-    position: relative;   
-    padding: 15px;
-    text-align: left;
-}
-
-.carousel-indicators.car-red li {
-    background-color: var(--red-color);
-}
-
-.carousel-indicators.car-yellow li{
-    background-color: var(--yellow-color);
-}
-
-.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
-    width: 40px;
-    height: 40px;
-}
-
-.carousel-indicators{
-    bottom: -50px!important;
-}
-
-.ws_annexe > p{
-    color: var(--red-color);
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.ws_annexe > a {
-    margin-top: 100px;
-}
-
-section.workshop_termines .ws_info > p {
-    margin-bottom: 3rem;
-}
-
-/* SECTION */
-
-section{
-    margin: 100px 0;
-}
-
-section.contact{
-    text-align: left;
-}
-
-section.contact div.address_contact{
-    font-size: 1.125rem;
-    padding-left: 50px;
-}
-
-section.contact div.address_contact h2{
-    font-size: 3.75rem;
-    margin-bottom: 20px;
-}
-
-section.contact div.address_contact h4{
-    margin-bottom: 20px;
-    color: var(--orange-color);
-}
-section.contact div.address_contact h4, section.contact div.address_contact p{
-    text-transform: uppercase;
-}
-li {
-  list-style: none;
-  text-decoration: none;
-}
-
-/* MAP */
-
-iframe{
-    display: block;
-    width: 100%;
-    height: 300px;
-    border: none;
-}
-
 /* FOOTER */
 
 footer *{
@@ -225,4 +142,13 @@ footer a:hover{
     left: 0;
     right: 0;
     z-index: -1;
+}
+
+/* MAP */
+
+iframe{
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: none;
 }

@@ -1,13 +1,6 @@
 /* BUREAU */
 
-@media screen and (min-width:850px){
-
-    /* ELEMENTS */
-
-    body{        
-        background: url(images/Backgroundbureau.svg) no-repeat;
-        background-size:100%;
-    }    
+@media screen and (min-width:850px){      
 
     /* HEADER */
 
@@ -90,138 +83,6 @@
         grid-column: 4 / span 2;
         grid-row: 1 / span 2;
     }
-
-    /* MAIN */
-
-    main{
-        display: grid;
-        grid-gap: 20px;
-        justify-content: center;
-        grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
-    }
-
-    div.carousel-item {
-        z-index: 999;
-        /* background: -webkit-linear-gradient(right, rgba(255,255,255,0) 28%,rgba(255,255,255,0) 31%,rgba(255,255,255,1) 90%); */
-    }
-
-    div.carousel-item > img {
-        height: 50vh;
-    }
-    
-    /* WORKSHOP */
-
-    section.workshop_termines, section.workshop_a_venir {
-        position: relative;
-        grid-column: 2 / span 3;
-        display: grid;
-        grid-template-rows: minmax(0,auto);
-    }
-
-    
-    /* WORKSHOP TERMINES */
-
-    section.workshop_termines .ws_annexe{
-        grid-column: 3 / span 1;
-        grid-row: 1;
-    }
-    section.workshop_termines .ws_annexe *{
-        position: relative;
-        z-index: 4;
-    }
-
-    section.workshop_termines .ws_annexe > p{
-        text-align: right;
-        left: 50px;
-        padding: 15px;
-    }
-    section.workshop_termines .ws_annexe > h2{
-        text-align: left;
-        left: -50px;
-        padding: 15px;
-    }
-
-    section.workshop_termines .ws_annexe > a{
-        top: 100px;
-    }
-
-    section.workshop_termines .ws_info{
-        grid-column: 1 / span 1;
-        grid-row: 1;
-        left: 50px;    
-        top: 35vh;
-        height: 20vh;
-        transition: 0.5s ease-in-out;
-        width: 14vw;
-    }
-
-    section.workshop_termines .ws_info:hover{
-        left: 50px;
-        top: 30vh;
-        height: 25vh;
-    }
-
-    section.workshop_termines .ws_carrousel{
-        grid-column: 1 / span 2;
-        grid-row: 1;
-    }    
-
-    /* WORKSHOP A VENIR */
-
-    section.workshop_a_venir .ws_annexe{
-        grid-column: 1 / span 1;
-        grid-row: 1;
-    }
-    section.workshop_a_venir .ws_annexe *{
-        position: relative;
-        z-index: 4;
-    }
-
-    section.workshop_a_venir .ws_annexe > p{
-        text-align: left;
-        padding: 15px;
-    }
-    section.workshop_a_venir .ws_annexe > h2 {
-        text-align: right;
-        left: 50px;
-        padding: 15px;
-    }
-
-    section.workshop_a_venir .ws_info{
-        grid-column: 3 / span 1;
-        grid-row: 1;
-        height: 25vh;
-        top: 30vh;
-        left: -50px;
-        width: 14vw;
-    }
-
-    section.workshop_a_venir .ws_carrousel{
-        grid-column: 2 / span 2;
-        grid-row: 1;
-    }
-
-    section.workshop_a_venir .ws_annexe > a{
-        top: 100px;
-    }    
-
-    /* CONTACT */
-
-    section.contact{
-        grid-column: 2 / span 3;
-        display: grid;
-        grid-template-rows: minmax(0,auto);
-        position: relative;
-    }
-
-    section.contact iframe{
-        grid-column: 2 / span 1;
-        grid-row: 1;
-    }
-    section.contact .address_contact{
-        grid-column: 3 / span 1;
-        grid-row: 1;
-    }
   
     /* FOOTER */
 
@@ -262,25 +123,15 @@
         bottom: 80px;
     }
 
-    .svg_footer{
+    /* .svg_footer{
         grid-column: 1 / span 6;
-    }
-
-
+    } */
 
 }
 
 /* MOBILE */
 
 @media screen and (max-width:850px){
-
-    /* ELEMENTS */
-
-    body{        
-        background: url(images/Backgroundmobil.svg) no-repeat;        
-        background-size:100%;
-    }    
-
 
     /* NAV */
 
@@ -360,33 +211,7 @@
     .nav-toggle.active > i {
         color: var(--main-color);
     }
-
-    /* MAIN */
-
-    .button_creation{
-        position: relative;
-        top: 40px;
-    }
-
-    section.workshop_termines .ws_info, section.workshop_a_venir .ws_info{
-        width: 40%;
-        position: relative;
-        top: -40px;
-        left: 55%;
-    }
-    
-    div.carousel-item > img {
-        height: 30vh;
-        width: 80vw!important;
-        margin-left: auto;
-        margin-right: auto;                
-    }
-
-    .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
-        fill: var(--dark-color);
-        fill-opacity:1;
-    }
-    
+   
 
     /* FOOTER */
 
