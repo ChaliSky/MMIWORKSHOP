@@ -86,9 +86,7 @@ a, a:hover{
 .ws-btn-red{
     color: var(--red-color);
     border: solid 1px var(--red-color);
-    padding: 1.3vw;
-    padding-right: 12vh;
-    padding-left: 12vh;
+
 }
 .ws-btn-red:hover{
     background-color: var(--red-color);
@@ -98,9 +96,7 @@ a, a:hover{
 .ws-btn-yellow{
     color: var(--yellow-color);
     border: solid 1px var(--yellow-color);
-    padding: 1.3vw;
-    padding-right: 12vh;
-    padding-left: 12vh;
+  
 }
 .ws-btn-yellow:hover{
     background-color: var(--yellow-color);
@@ -167,5 +163,5 @@ iframe{
 }
 
 div.carousel-item > img{
-    object-fit: cover;   
+    object-fit: cover;
 }
