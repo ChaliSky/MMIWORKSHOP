@@ -24,6 +24,7 @@ body{
     font-family: 'Helvetica', sans-serif;
     color: var(--dark-color);
     text-align: center;
+    position: relative;
 }
 
 /* TITLES */
@@ -135,7 +136,11 @@ header div.title_homepage p {
 /* FOOTER */
 
 footer{
-    background-color: var(--dark-color);
+    position:absolute;
+    bottom:0;
+    min-width: 100%;
+    z-index: 1;
+    padding-top:300px;
 }
 
 footer *{
@@ -145,18 +150,6 @@ footer *{
 
 footer a:hover{
     color: var(--orange-color);
-}
-
-/* SVG */
-
-.svg_footer{
-    width: 100vw;
-    height: auto;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: -1;
 }
 
 /* MAP */
