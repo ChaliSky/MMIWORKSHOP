@@ -12,6 +12,10 @@ $(document).ready(function(){
     }
 
     $('.nav-toggle').click(doToggle);
+
+    $("header > #header_nav ul li a").hover(function(){        
+        $(this).children().toggleClass("active");
+    }); 
     
     // Carousel Card Info
 

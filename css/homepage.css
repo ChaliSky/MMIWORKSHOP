@@ -52,7 +52,7 @@ section.ws-right .ws-annexe > p{
 }
 
 section.ws-right div.carousel-item::after{
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0.8) 100%);
 }
         /* WORKSHOP A VENIR */
 
@@ -68,7 +68,7 @@ section.ws-left .ws-info > p {
 }
 
 section.ws-left div.carousel-item::after{
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
 }
 
         /* CARROUSEL */
@@ -110,6 +110,23 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
     text-transform: uppercase;
 }
 
+
+    /* CAROUSEL RESPONSIVE */
+
+div.carousel-item{
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 */
+}
+div.carousel-item > img {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+
 /* ---- BUREAU ---- */
 
 @media screen and (min-width:850px){
@@ -120,11 +137,6 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         background: url(images/Backgroundbureau.svg) no-repeat;
         background-size:100%;
     }  
-
-    div.carousel-item > img {
-        height: 56.25vh; /* height:width ratio = 9/16 = .5625  */
-        max-height: 100vh;
-    }
 
     /* MAIN */
 
@@ -139,15 +151,18 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
 
     section.ws-right, section.ws-left {
         position: relative;
-        grid-column: 2 / span 3;
         display: grid;
         grid-template-rows: minmax(0,auto);
     }
     
     /* WORKSHOP TERMINES */
 
+    section.ws-right{
+        grid-column: 2 / span 4;
+    }
+
     section.ws-right .ws-annexe{
-        grid-column: 3 / span 1;
+        grid-column: 4 / span 1;
         grid-row: 1;
     }
     section.ws-right .ws-annexe *{
@@ -159,16 +174,15 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         padding: 15px;
     }
     section.ws-right .ws-annexe > h2{
-        left: -15px;
-        padding: 15px;    }
+        left: -50px;
+        padding: 15px;    
+    }
 
     section.ws-right .ws-annexe > a{
-        top: 100px;
+        top: 13.5vh;
+        right: 100px;
     }
     section.ws-right .ws-info{
-        position: absolute;
-        grid-column: 1 / span 1;
-        grid-row: 1;
         left: 50px;    
         bottom: -20px;
         height: 90px;
@@ -192,11 +206,14 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         height: 25vh;
     } */
     section.ws-right .ws_carrousel{
-        grid-column: 1 / span 2;
+        grid-column: 1 / span 3;
         grid-row: 1;
     }    
 
     /* WORKSHOP A VENIR */
+    section.ws-left{
+        grid-column: 1 / span 4;
+    }
 
     section.ws-left .ws-annexe{
         grid-column: 1 / span 1;
@@ -214,19 +231,18 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         padding: 15px;
     }
     section.ws-left .ws-info{
-        grid-column: 3 / span 1;
-        grid-row: 1;
         height: 145px;
         bottom: -20px;
         right: 20px;    
         width: 200px;
     }
     section.ws-left .ws_carrousel{
-        grid-column: 2 / span 2;
+        grid-column: 2 / span 3;
         grid-row: 1;
     }
     section.ws-left .ws-annexe > a{
         top: 100px;
+        left: 100px;
     }    
 
     /* CONTACT */
@@ -271,7 +287,7 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
     section.ws-right .ws-info, section.ws-left .ws-info{
         width: 200px;
         position: relative;
-        top: -40px;
+        top: -145px;
         left: 55%;
     }
 
@@ -300,13 +316,12 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         padding-left: 20px;
     }
 
-        /* CARROUSEL */
-    
-    div.carousel-item > img {
-        height: 30vh;
-        width: 80vw!important;
-        margin-left: auto;
-        margin-right: auto;             
+            /* CAROUSEL RESPONSIVE */
+
+    div.carousel-item{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
     }
 
 }

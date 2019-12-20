@@ -55,7 +55,7 @@ ul li {
 
 /* COMPOSANTS */
 
-img {background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
+img {
     /*responsive img*/
       max-width: 100%;
       height: auto;
@@ -86,9 +86,6 @@ a, a:hover{
 .ws-btn-red{
     color: var(--red-color);
     border: solid 1px var(--red-color);
-    padding: 1.3vw;
-    padding-right: 12vh;
-    padding-left: 12vh;
 }
 .ws-btn-red:hover{
     background-color: var(--red-color);
@@ -98,9 +95,6 @@ a, a:hover{
 .ws-btn-yellow{
     color: var(--yellow-color);
     border: solid 1px var(--yellow-color);
-    padding: 1.3vw;
-    padding-right: 12vh;
-    padding-left: 12vh;
 }
 .ws-btn-yellow:hover{
     background-color: var(--yellow-color);
@@ -117,11 +111,12 @@ a, a:hover{
 }
 
 
+
 /* HEADER */
 
 header{
     justify-content: center;
-    margin: 10vh 0;
+    margin-bottom: 10vh;
 }
 header > div.title_homepage {
     text-align: left;
