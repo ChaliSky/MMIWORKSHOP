@@ -10,8 +10,8 @@ section{
 
 section.ws-right .ws-info, section.ws-left .ws-info {
     z-index: 1;
-    background-color: white;    
-    position: absolute;   
+    background-color: white;
+    position: absolute;
     padding: 15px;
     text-align: left;
 }
@@ -126,17 +126,15 @@ div.carousel-item > img {
     position: absolute;
 }
 
-
-/* ---- BUREAU ---- */
-
+/* ---- Responsive desktop Home page ---- */
 @media screen and (min-width:850px){
 
     /* ELEMENTS */
 
-    body{        
+    body{
         background: url(images/Backgroundbureau.svg) no-repeat;
         background-size:100%;
-    }  
+    }
 
     /* MAIN */
 
@@ -146,7 +144,7 @@ div.carousel-item > img {
         justify-content: center;
         grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
     }
-    
+
     /* WORKSHOP */
 
     section.ws-right, section.ws-left {
@@ -154,7 +152,7 @@ div.carousel-item > img {
         display: grid;
         grid-template-rows: minmax(0,auto);
     }
-    
+
     /* WORKSHOP TERMINES */
 
     section.ws-right{
@@ -174,7 +172,7 @@ div.carousel-item > img {
     }
     section.ws-right .ws-annexe > h2{
         left: -50px;
-        padding: 15px;    
+        padding: 15px;
     }
 
     section.ws-right .ws-annexe > a{
@@ -182,7 +180,7 @@ div.carousel-item > img {
         right: 100px;
     }
     section.ws-right .ws-info{
-        left: 50px;    
+        left: 50px;
         bottom: -20px;
         height: 90px;
         transition: 0.5s ease-in-out;
@@ -195,7 +193,7 @@ div.carousel-item > img {
     section.ws-right .ws-info > a {
         opacity: 0;
     }
-    
+
     section.ws-right .ws-info.active > a {
         opacity: 1;
     }
@@ -207,7 +205,7 @@ div.carousel-item > img {
     section.ws-right .ws_carrousel{
         grid-column: 1 / span 3;
         grid-row: 1;
-    }    
+    }
 
     /* WORKSHOP A VENIR */
     section.ws-left{
@@ -232,7 +230,7 @@ div.carousel-item > img {
     section.ws-left .ws-info{
         height: 145px;
         bottom: -20px;
-        right: 20px;    
+        right: 20px;
         width: 200px;
     }
     section.ws-left .ws_carrousel{
@@ -242,7 +240,7 @@ div.carousel-item > img {
     section.ws-left .ws-annexe > a{
         top: 100px;
         left: 100px;
-    }    
+    }
 
     /* CONTACT */
 
@@ -263,16 +261,16 @@ div.carousel-item > img {
 
 }
 
-/* ---- MOBILE ---- */
+/* ---- Responsive mobile Home page ---- */
 
 @media screen and (max-width:850px){
 
     /* ELEMENTS */
 
-    body{        
-        background: url(images/Backgroundmobil.svg) no-repeat;        
+    body{
+        background: url(images/Backgroundmobil.svg) no-repeat;
         background-size:100%;
-    }    
+    }
 
     /* MAIN */
 

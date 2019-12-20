@@ -1,22 +1,19 @@
 $(document).ready(function(){
 
-    // Menu
+    // Menu hamburger format mobile
 
     var toggle = document.querySelector(".nav-toggle");
+    var menu = document.querySelector(".nav_principale");
 
-    toggle.innerHTML = '<i class="fas fa-bars"></i>';
-    function doToggle() {
-        $("#header_nav").toggleClass("open");
-        $(".nav-toggle").toggleClass("active");
-        $("#header_nav a.logo").toggleClass("active");
+    //La fonction permettent de basculer l'affichage en ajoutant/supprimant des classes
+    function doToggle(){
+      menu.classList.toggle("open");
+      toggle.classList.toggle("active");
     }
 
-    $('.nav-toggle').click(doToggle);
 
-    $("header > #header_nav ul li a").hover(function(){        
-        $(this).children().toggleClass("active");
-    }); 
-    
+    toggle.addEventListener('click', doToggle);
+
     // Carousel Card Info
 
     $("section.ws-right .ws-info").hover(function(){

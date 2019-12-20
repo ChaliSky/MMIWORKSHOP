@@ -131,14 +131,6 @@ header div.title_homepage p {
 
 /* FOOTER */
 
-footer{
-    position:absolute;
-    bottom:0;
-    min-width: 100%;
-    z-index: 1;
-    padding-top:300px;
-}
-
 footer *{
     font-size: 1.25rem;
     color: var(--main-color);
@@ -164,4 +156,10 @@ iframe{
 
 div.carousel-item > img{
     object-fit: cover;
+}
+
+/* NAVIGUATION */
+
+header nav ul{
+  text-transform: uppercase;
 }
