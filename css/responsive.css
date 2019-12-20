@@ -141,6 +141,9 @@
         font-size: 2rem;
     }
 
+    h4{
+        font-size: 1.2rem;
+    }
     /* NAV */
 
     #header_nav{
@@ -159,13 +162,11 @@
         visibility:visible;
     }
     #header_nav ul{
+        padding-top: 50%;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-transform: uppercase;
         font-size: 1.3rem;
         height: 100vh;
-        padding: 0;
         margin: 0;
     }
     #header_nav ul li{

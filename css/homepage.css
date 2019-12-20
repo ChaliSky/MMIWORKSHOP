@@ -9,7 +9,7 @@ section{
     /* WORKSHOP */
 
 section.ws-right .ws-info, section.ws-left .ws-info {
-    z-index: 99;
+    z-index: 1;
     background-color: white;    
     position: absolute;   
     padding: 15px;
@@ -155,11 +155,11 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         z-index: 4;
     }
     section.ws-right .ws-annexe > p{
-        left: 50px;
+        left: 15px;
         padding: 15px;
     }
     section.ws-right .ws-annexe > h2{
-        left: -50px;
+        left: -15px;
         padding: 15px;    }
 
     section.ws-right .ws-annexe > a{
@@ -173,7 +173,7 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         bottom: -20px;
         height: 90px;
         transition: 0.5s ease-in-out;
-        width: 14vw;
+        width: 200px;
     }
     section.ws-right .ws-info.active{
         height: 145px;
@@ -216,8 +216,10 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
     section.ws-left .ws-info{
         grid-column: 3 / span 1;
         grid-row: 1;
-        height: 90px;
-        width: 14vw;
+        height: 145px;
+        bottom: -20px;
+        right: 20px;    
+        width: 200px;
     }
     section.ws-left .ws_carrousel{
         grid-column: 2 / span 2;
@@ -267,7 +269,7 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
         /* WORKSHOP */
 
     section.ws-right .ws-info, section.ws-left .ws-info{
-        width: 40%;
+        width: 200px;
         position: relative;
         top: -40px;
         left: 55%;
