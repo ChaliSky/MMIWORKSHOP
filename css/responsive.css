@@ -1,6 +1,6 @@
 /* BUREAU */
 
-@media screen and (min-width:850px){      
+@media screen and (min-width:850px){
 
     /* HEADER */
 
@@ -101,7 +101,7 @@
     footer * {
         grid-row: 1;
     }
-    
+
     .footer-address{
         grid-column: 2 / span 1;
     }
@@ -211,7 +211,7 @@
     .nav-toggle.active > i {
         color: var(--main-color);
     }
-   
+
     /* MAIN */
 
     main{
@@ -220,8 +220,8 @@
 
     /* FOOTER */
 
-    footer{
+    /*footer{
         background: url(images/footermobil.svg) no-repeat;
-    }
+    }*/
 
 }
