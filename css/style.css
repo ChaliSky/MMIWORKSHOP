@@ -81,6 +81,7 @@ a, a:hover{
     align-self: center;
     padding: 15px;
     background-color: var(--main-color);
+    display: inline-block;
 }
 
 .ws-btn-red{
