@@ -25,7 +25,7 @@ section.ws-right .ws-info, section.ws-left .ws-info {
     margin-top: 100px;
 }
 
-section.ws-left div.carousel-item::after, section.ws-right div.carousel-item::after{
+section.ws-left div.carousel-inner::after, section.ws-right div.carousel-inner::after{
     content: "";
     position: absolute;
     left: 0;
@@ -51,7 +51,7 @@ section.ws-right .ws-annexe > p{
     color: var(--red-color);
 }
 
-section.ws-right div.carousel-item::after{
+section.ws-right div.carousel-inner::after{
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0.8) 100%);
 }
         /* WORKSHOP A VENIR */
@@ -67,7 +67,7 @@ section.ws-left .ws-info > p {
     margin-bottom: 3rem;
 }
 
-section.ws-left div.carousel-item::after{
+section.ws-left div.carousel-inner::after{
     background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
 }
 
@@ -176,7 +176,6 @@ div.carousel-item > img {
     }
 
     section.ws-right .ws-annexe > a{
-        top: 13.5vh;
         right: 100px;
     }
     section.ws-right .ws-info{
@@ -238,7 +237,6 @@ div.carousel-item > img {
         grid-row: 1;
     }
     section.ws-left .ws-annexe > a{
-        top: 100px;
         left: 100px;
     }
 
