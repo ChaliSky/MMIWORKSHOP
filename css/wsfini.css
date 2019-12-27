@@ -1,7 +1,6 @@
 body {
   background: url(images/BackgroundmobilWSterm.svg) no-repeat;
   background-size:100%;
-  padding: 20px;
 }
 
 h1 {
@@ -9,6 +8,10 @@ h1 {
   text-align: left;
   margin: 40px;
   margin-top: 20vh;
+}
+
+header, main {
+  padding: 20px;
 }
 
 .ws-btn-red, .ws-btn-yellow{
