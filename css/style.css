@@ -35,8 +35,9 @@ h1, h2, h3, h4, h5, h6{
     text-transform: uppercase;
     margin: 0;
 }
+
 h1{
-    /* font-size: 5rem; */
+    font-size: 6rem;
     margin: 0;
 }
 h2{
@@ -66,51 +67,6 @@ a, a:hover{
     color: var(--dark-color);
 }
 
-.unstyled{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.ws-btn{
-    text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 32px;
-    justify-content: center;
-    align-self: center;
-    padding: 15px;
-    background-color: var(--main-color);
-    display: inline-block;
-}
-
-.ws-btn-red{
-    color: var(--red-color);
-    border: solid 1px var(--red-color);
-}
-.ws-btn-red:hover{
-    background-color: var(--red-color);
-    color: var(--main-color);
-}
-
-.ws-btn-yellow{
-    color: var(--yellow-color);
-    border: solid 1px var(--yellow-color);
-}
-.ws-btn-yellow:hover{
-    background-color: var(--yellow-color);
-    color: var(--main-color);
-}
-
-.ws-btn-dark{
-    color: var(--dark-color);
-    border: solid 1px var(--dark-color);
-}
-.ws-btn-dark:hover{
-    background-color: var(--dark-color);
-    color: var(--main-color);
-}
-
 div.hr.active{
     border: 2px solid var(--orange-color);
     border-radius: 5px;
@@ -122,14 +78,17 @@ header{
     justify-content: center;
     margin-bottom: 10vh;
 }
+
 header > div.title_homepage {
     text-align: left;
 }
+
 header div.title_homepage p {
     color: var(--light-blue-color);
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1.625rem;
+    font-size: 1.7rem;
+    margin-bottom: 30px;
 }
 
 /* FOOTER */
