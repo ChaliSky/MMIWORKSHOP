@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-    font-size: 6rem;
+    font-size: 5.5rem;
     margin: 0;
 }
 h2{
@@ -48,6 +48,12 @@ h3{
     font-size: 2rem;
 }
 
+p{
+  color: var(--light-blue-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
 
 /* LISTES */
 ul li {
@@ -77,18 +83,6 @@ div.hr.active{
 header{
     justify-content: center;
     margin-bottom: 10vh;
-}
-
-header > div.title_homepage {
-    text-align: left;
-}
-
-header div.title_homepage p {
-    color: var(--light-blue-color);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    margin-bottom: 30px;
 }
 
 /* FOOTER */
