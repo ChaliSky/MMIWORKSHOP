@@ -52,6 +52,8 @@
         margin: 0;
     }
 
+    /* FOOTER */
+
     nav.footer-icon ul{
       display:flex;
       flex-direction: row;
@@ -82,23 +84,6 @@
         grid-gap: 20px;
     }
 
-    header > div.title-homepage{
-        grid-column: 2 / span 2;
-    }
-
-    header > div.button-homepage {
-        grid-column: 2 / span 2;
-        grid-row: 2/ span 1;
-    }
-
-    header > svg.icon-logo {
-        margin-top: 20vh;
-        width: 40vw;
-        margin-left: 20px;
-        grid-column: 4 / span 2;
-        grid-row: 1 / span 2;
-    }
-
     div.hr.active {
         border: 2px solid var(--orange-color);
         border-radius: 5px;
@@ -126,9 +111,8 @@
     .flux{
       width: 100%;
       margin: 0px;
-      margin-top: -320px;
+      margin-top: -280px;
       padding: 0px;
-      padding-top: 50px;
     }
 
     div.footer-information{
@@ -234,7 +218,7 @@
     .nav-toggle {
       width: 30px;
       height: 30px;
-      position: absolute;
+      position: fixed;
       right: 30px;
       top: 30px;
       display: flex;

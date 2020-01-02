@@ -27,6 +27,11 @@ body{
     position: relative;
 }
 
+main{
+    min-height: 100vh;
+    margin-bottom: 300px;
+}
+
 /* TITLES */
 
 h1, h2, h3, h4, h5, h6{
@@ -82,7 +87,6 @@ div.hr.active{
 
 header{
     justify-content: center;
-    margin-bottom: 10vh;
 }
 
 /* FOOTER */
