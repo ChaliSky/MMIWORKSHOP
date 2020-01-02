@@ -1,12 +1,57 @@
-/* ---- GLOBALE ---- */
+/* ---- GLOBALE FORMAT DESKTOP ---- */
+
+body{
+    background: url(images/Backgroundbureau.svg) no-repeat;
+    background-size:100%;
+    max-width: 100%;
+    height: 100%;
+}
+
+/* HEADER */
+
+header > div.title-homepage{
+  display: grid;
+  margin-top: 25vh;
+  margin-left: 10vw;
+  margin-bottom: -32vh;
+  text-align: left;
+}
+
+header > div.button-homepage{
+  display: grid;
+  position: static;
+  margin-bottom: -35vh;
+  margin-left: 10vw;
+}
+
+header > div.title-homepage p{
+  margin-top:0vh;
+  margin-bottom: 30px;
+  /*margin-top: -105px;*/
+  padding: 0;
+}
 
 /* MAIN */
+
+main{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
+    margin-bottom: 25vh;
+}
 
 section{
     margin: 100px 0;
 }
 
-    /* WORKSHOP */
+/* WORKSHOP */
+
+section.ws-right, section.ws-left {
+    position: relative;
+    display: grid;
+    grid-template-rows: minmax(0,auto);
+}
 
 section.ws-right .ws-info, section.ws-left .ws-info {
     z-index: 1;
@@ -25,13 +70,23 @@ section.ws-right .ws-info, section.ws-left .ws-info {
     margin-top: 100px;
 }
 
+section.ws-left div.carousel-inner::after, section.ws-right div.carousel-inner::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
 section.ws-right .ws-info > a {
     position: absolute;
     left: 15px;
     bottom: 15px;
 }
 
-        /* WORKSHOP TERMINES */
+/* WORKSHOP TERMINES */
 
 section.ws-right .ws-annexe > h2, section.ws-right .ws-annexe > p {
     text-align: left;
@@ -40,7 +95,63 @@ section.ws-right .ws-annexe > h2, section.ws-right .ws-annexe > p {
 section.ws-right .ws-annexe > p{
     color: var(--red-color);
 }
-        /* WORKSHOP A VENIR */
+
+section.ws-right div.carousel-inner::after{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0.8) 100%);
+}
+
+section.ws-right{
+    grid-column: 2 / span 4;
+}
+
+section.ws-right .ws-annexe{
+    grid-column: 4 / span 1;
+    grid-row: 1;
+}
+section.ws-right .ws-annexe *{
+    position: relative;
+    z-index: 4;
+}
+section.ws-right .ws-annexe > p{
+    padding: 15px;
+}
+section.ws-right .ws-annexe > h2{
+    left: -50px;
+    padding: 15px;
+}
+
+section.ws-right .ws-annexe > a{
+    right: 100px;
+}
+section.ws-right .ws-info{
+    left: 50px;
+    bottom: -20px;
+    height: 90px;
+    transition: 0.5s ease-in-out;
+    width: 200px;
+}
+section.ws-right .ws-info.active{
+    height: 145px;
+}
+
+section.ws-right .ws-info > a {
+    opacity: 0;
+}
+
+section.ws-right .ws-info.active > a {
+    opacity: 1;
+}
+/* section.ws-right .ws-info:hover{
+    left: 50px;
+    top: 30vh;
+    height: 25vh;
+} */
+section.ws-right .ws_carrousel{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+}
+
+/* WORKSHOP A VENIR */
 
 section.ws-left .ws-annexe > h2, section.ws-left .ws-annexe > p {
     text-align: right;
@@ -53,23 +164,59 @@ section.ws-left .ws-info > p {
     margin-bottom: 3rem;
 }
 
-        /* CARROUSEL */
-
-.carousel-indicators.car-red li {
-    background-color: var(--red-color);
-}
-.carousel-indicators.car-yellow li{
-    background-color: var(--yellow-color);
-}
-.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
-    width: 40px;
-    height: 40px;
-}
-.carousel-indicators{
-    bottom: -25px!important;
+section.ws-left div.carousel-inner::after{
+    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
 }
 
-    /* CONTACT */
+section.ws-left{
+    grid-column: 1 / span 4;
+}
+
+section.ws-left .ws-annexe{
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+section.ws-left .ws-annexe *{
+    position: relative;
+    z-index: 4;
+}
+section.ws-left .ws-annexe > p{
+    padding: 15px;
+}
+section.ws-left .ws-annexe > h2 {
+    left: 50px;
+    padding: 15px;
+}
+section.ws-left .ws-info{
+    height: 145px;
+    bottom: -20px;
+    right: 20px;
+    width: 200px;
+}
+section.ws-left .ws_carrousel{
+    grid-column: 2 / span 3;
+    grid-row: 1;
+}
+section.ws-left .ws-annexe > a{
+    left: 100px;
+}
+
+/* CONTACT */
+
+section.contact{
+    grid-column: 2 / span 3;
+    display: grid;
+    grid-template-rows: minmax(0,auto);
+    position: relative;
+}
+section.contact iframe{
+    grid-column: 2 / span 1;
+    grid-row: 1;
+}
+section.contact .address_contact{
+    grid-column: 3 / span 1;
+    grid-row: 1;
+}
 
 section.contact{
     text-align: left;
@@ -92,6 +239,22 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
     text-transform: uppercase;
 }
 
+        /* CARROUSEL */
+
+.carousel-indicators.car-red li {
+    background-color: var(--red-color);
+}
+.carousel-indicators.car-yellow li{
+    background-color: var(--yellow-color);
+}
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+.carousel-indicators{
+    bottom: -50px!important;
+}
+
 
     /* CAROUSEL RESPONSIVE */
 
@@ -108,198 +271,7 @@ div.carousel-item > img {
     position: absolute;
 }
 
-/* ---- Responsive desktop Home page ---- */
-@media screen and (min-width:850px){
-
-    /* ELEMENTS */
-
-    body{
-        background: url(images/Backgroundbureau.svg) no-repeat;
-        background-size:100%;
-    }
-
-    /* MAIN */
-
-    main{
-        display: grid;
-        grid-gap: 20px;
-        justify-content: center;
-        grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
-    }
-
-    svg.icon-logo {
-        margin-top: 20vh;
-        width: 40vw;
-        margin-left: 20px;
-        grid-column: 4 / span 1;
-        grid-row: 1 / span 2;
-    }
-
-    /* SECTION HEADER */
-
-    section.header{
-        grid-column: 1 / span 5;
-    }
-
-    div.title-homepage{
-        grid-column: 2 / span 2;
-    }
-
-    div.button-homepage {
-        grid-column: 2 / span 2;
-        grid-row: 2/ span 1;
-    }    
-
-    div.title-homepage{
-        display: grid;
-        margin-top: 25vh;
-        margin-left: 10vw;
-        margin-bottom: -32vh;
-        text-align: left;
-    }
-
-    div.button-homepage{
-        display: grid;
-        position: static;
-        margin-bottom: -35vh;
-        margin-left: 10vw;
-    }
-
-    div.title-homepage p{
-        margin-top:0vh;
-        margin-bottom: 30px;
-        /*margin-top: -105px;*/
-        padding: 0;
-    }
-
-    /* WORKSHOP */
-
-    section.header, section.ws-right, section.ws-left {
-        position: relative;
-        display: grid;
-        grid-template-rows: minmax(0,auto);
-    }
-    
-    section.ws-left div.carousel-inner::after, section.ws-right div.carousel-inner::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
-        height: 100%;
-        width: 100%;
-    }
-
-    /* WORKSHOP TERMINES */
-
-    section.ws-right{
-        grid-column: 2 / span 4;
-    }
-
-    section.ws-right .ws-annexe{
-        grid-column: 4 / span 1;
-        grid-row: 1;
-    }
-    section.ws-right .ws-annexe *{
-        position: relative;
-        z-index: 4;
-    }
-    section.ws-right .ws-annexe > p{
-        padding: 15px;
-    }
-    section.ws-right .ws-annexe > h2{
-        left: -50px;
-        padding: 15px;
-    }
-
-    section.ws-right .ws-annexe > a{
-        right: 100px;
-    }
-    section.ws-right .ws-info{
-        left: 50px;
-        bottom: -20px;
-        height: 120px;
-        transition: 0.5s ease-in-out;
-        width: 200px;
-    }
-    section.ws-right .ws-info.active{
-        height: 185px;
-    }
-
-    section.ws-right .ws-info > a {
-        opacity: 0;
-    }
-
-    section.ws-right .ws-info.active > a {
-        opacity: 1;
-    }
-    section.ws-right div.carousel-inner::after{
-        background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0.8) 100%);
-    }
-
-    section.ws-right .ws_carrousel{
-        grid-column: 1 / span 3;
-        grid-row: 1;
-    }
-
-    /* WORKSHOP A VENIR */
-    section.ws-left{
-        grid-column: 1 / span 4;
-    }
-
-    section.ws-left .ws-annexe{
-        grid-column: 1 / span 1;
-        grid-row: 1;
-    }
-    section.ws-left .ws-annexe *{
-        position: relative;
-        z-index: 4;
-    }
-    section.ws-left .ws-annexe > p{
-        padding: 15px;
-    }
-    section.ws-left .ws-annexe > h2 {
-        left: 50px;
-        padding: 15px;
-    }
-    section.ws-left .ws-info{
-        height: 250;
-        bottom: -100px;
-        right: 20px;
-        width: 200px;
-    }
-    section.ws-left .ws_carrousel{
-        grid-column: 2 / span 3;
-        grid-row: 1;
-    }
-    section.ws-left .ws-annexe > a{
-        left: 100px;
-    }
-
-    section.ws-left div.carousel-inner::after{
-        background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
-    }
-
-    /* CONTACT */
-
-    section.contact{
-        grid-column: 2 / span 3;
-        display: grid;
-        grid-template-rows: minmax(0,auto);
-        position: relative;
-    }
-    section.contact iframe{
-        grid-column: 2 / span 1;
-        grid-row: 1;
-    }
-    section.contact .address_contact{
-        grid-column: 3 / span 1;
-        grid-row: 1;
-    }
-
-}
-
-/* ---- Responsive mobile Home page ---- */
+/* ---- Responsive mobile Homepage ---- */
 
 @media screen and (max-width:850px){
 
@@ -310,20 +282,57 @@ div.carousel-item > img {
         background-size:100%;
     }
 
-    /* MAIN */
+    /* HEADER */
 
-    .button-creation{
-        position: relative;
-        top: 40px;
+    header > svg.icon-logo {
+        margin-top: 11vh;
+        width: 50vw;
+        margin-right: -30vw;
     }
 
-        /* WORKSHOP */
+    header > div.title-homepage{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin:0;
+      padding: 0;
+      margin-top: 5vh;
+      margin-left: 10vw;
+    }
+
+    header > div.button-homepage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      margin-top: 20vh;
+      padding: 0;
+    }
+
+    header > div.button-homepage a{
+      width: 75%;
+    }
+
+    header > div.title-homepage p{
+      display: flex;
+      margin: 0;
+      padding: 0;
+      width: 75%;
+    }
+
+    /* MAIN */
+    main{
+      margin-bottom: 25vh;
+    }
+
+    /* WORKSHOP */
 
     section.ws-right .ws-info, section.ws-left .ws-info{
-        width: 80%;
+        width: 200px;
         position: relative;
-        top: 50px;
-        left: 10%;
+        top: -145px;
+        left: 55%;
     }
 
     .ws-annexe > p {
@@ -334,7 +343,7 @@ div.carousel-item > img {
         margin: 30px 0;
     }
 
-            /* WORKSHOP TERMINES */
+  /* WORKSHOP TERMINES */
 
     section.ws-right .ws-annexe > h2, section.ws-right .ws-annexe > p {
         padding-left: 10vw;
@@ -344,19 +353,23 @@ div.carousel-item > img {
         height: 145px;
     }
 
-            /* WORKSHOP A VENIR */
+    /* WORKSHOP A VENIR */
 
     section.ws-left .ws-annexe > h2, section.ws-left .ws-annexe > p {
         padding-right: 10vw;
         padding-left: 20px;
     }
 
-            /* CAROUSEL RESPONSIVE */
+    /* CAROUSEL RESPONSIVE */
 
     div.carousel-item{
         width: 80%;
         margin-left: 10%;
         margin-top: 10%;
     }
+
+    /* FOOTER */
+
+
 
 }
