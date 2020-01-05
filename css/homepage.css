@@ -126,12 +126,12 @@ section.ws-right .ws-annexe > a{
 section.ws-right .ws-info{
     left: 50px;
     bottom: -20px;
-    height: 90px;
+    height: 140px;
     transition: 0.5s ease-in-out;
     width: 200px;
 }
 section.ws-right .ws-info.active{
-    height: 145px;
+    height: 185px;
 }
 
 section.ws-right .ws-info > a {
@@ -188,8 +188,8 @@ section.ws-left .ws-annexe > h2 {
     padding: 15px;
 }
 section.ws-left .ws-info{
-    height: 145px;
-    bottom: -20px;
+    height: 245px;
+    bottom: -80px;
     right: 20px;
     width: 200px;
 }
