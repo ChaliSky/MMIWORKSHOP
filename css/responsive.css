@@ -82,7 +82,7 @@
         grid-gap: 20px;
     }
 
-    header > div.title-homepage{
+    header > div.title{
         grid-column: 2 / span 2;
     }
 
@@ -92,9 +92,10 @@
     }
 
     header > svg.icon-logo {
-        margin-top: 20vh;
+        position: relative;
+        top: 20vh;
         width: 40vw;
-        margin-left: 20px;
+        left: 20px;
         grid-column: 4 / span 2;
         grid-row: 1 / span 2;
     }
@@ -282,6 +283,16 @@
       /* fixe l'icon dans le menu active, empêche au scroll qu'il disparaisse */
     }
 
+    header > div.title{
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex-direction: column;
+      margin:0;
+      padding: 0;
+      margin-top: 5vh;
+      margin-left: 10vw;
+    }
     /* MAIN */
 
     /* POSTIONNEMENT FOOTER */

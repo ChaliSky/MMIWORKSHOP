@@ -9,13 +9,6 @@ body{
 
 /* HEADER */
 
-header > div.title-homepage{
-  display: grid;
-  margin-top: 25vh;
-  margin-left: 10vw;
-  margin-bottom: -32vh;
-  text-align: left;
-}
 
 header > div.button-homepage{
   display: grid;
@@ -24,7 +17,7 @@ header > div.button-homepage{
   margin-left: 10vw;
 }
 
-header > div.title-homepage p{
+header > div.title p{
   margin-top:0vh;
   margin-bottom: 30px;
   /*margin-top: -105px;*/
@@ -290,16 +283,6 @@ div.carousel-item > img {
         margin-right: -30vw;
     }
 
-    header > div.title-homepage{
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      margin:0;
-      padding: 0;
-      margin-top: 5vh;
-      margin-left: 10vw;
-    }
 
     header > div.button-homepage{
       display: flex;
@@ -314,7 +297,7 @@ div.carousel-item > img {
       width: 75%;
     }
 
-    header > div.title-homepage p{
+    header > div.title p{
       display: flex;
       margin: 0;
       padding: 0;
@@ -350,7 +333,7 @@ div.carousel-item > img {
         padding-right: 20px;
     }
     section.ws-right .ws-info {
-        height: 145px;
+        height: 165px;
     }
 
     /* WORKSHOP A VENIR */
