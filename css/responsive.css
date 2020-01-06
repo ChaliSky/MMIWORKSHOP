@@ -277,6 +277,11 @@
       background-color: var(--main-color);
     }
 
+    .nav-toggle.active{
+      position: fixed; 
+      /* fixe l'icon dans le menu active, empêche au scroll qu'il disparaisse */
+    }
+
     /* MAIN */
 
     /* POSTIONNEMENT FOOTER */

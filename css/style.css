@@ -118,6 +118,10 @@ div.carousel-item > img{
     object-fit: cover;
 }
 
+.carousel-control-prev, .carousel-control-next{
+    z-index: 10;
+}
+
 /* NAVIGUATION */
 
 header nav ul{
