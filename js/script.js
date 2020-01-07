@@ -34,14 +34,14 @@ $(document).ready(function(){
     // Range Slider 
 
     // TODO : adapter pour notre range slider
-    // var rangeSlider = document.getElementById("rs-range-line");
-    // var rangeBullet = document.getElementById("rs-bullet");
+    var rangeSlider = document.getElementById("form_nbpers");
+    var rangeBullet = document.getElementById("form_bulle");
+    
+    rangeBullet.innerHTML = "Nombre de personnes : " + rangeSlider.value;
 
-    // rangeSlider.addEventListener("input", showSliderValue, false);
+    rangeSlider.addEventListener("input", showSliderValue, false);
 
-    // function showSliderValue() {
-    //   rangeBullet.innerHTML = rangeSlider.value;
-    //   var bulletPosition = (rangeSlider.value /rangeSlider.max);
-    //   rangeBullet.style.left = (bulletPosition * 578) + "px";
-    // }
+    function showSliderValue() {
+      rangeBullet.innerHTML = "Nombre de personnes : " + rangeSlider.value;
+    }
 });
