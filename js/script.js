@@ -28,5 +28,20 @@ $(document).ready(function(){
 
     $("header > #header_nav ul li a").hover(function(){
       $(this).children().toggleClass("active");
-    })
+    });
+
+
+    // Range Slider 
+
+    // TODO : adapter pour notre range slider
+    // var rangeSlider = document.getElementById("rs-range-line");
+    // var rangeBullet = document.getElementById("rs-bullet");
+
+    // rangeSlider.addEventListener("input", showSliderValue, false);
+
+    // function showSliderValue() {
+    //   rangeBullet.innerHTML = rangeSlider.value;
+    //   var bulletPosition = (rangeSlider.value /rangeSlider.max);
+    //   rangeBullet.style.left = (bulletPosition * 578) + "px";
+    // }
 });

@@ -133,3 +133,21 @@ div.carousel-item > img{
 header nav ul{
   text-transform: uppercase;
 }
+
+/* MDB changement */
+
+.custom-control-input:checked~.custom-control-label::before{
+    color: var(--main-color);
+    border-color: var(--dark-color);
+    background-color: var(--dark-color);
+}
+
+.custom-select, .custom-number{
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.md-form{
+    margin-bottom: 2.5rem;
+}
