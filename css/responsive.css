@@ -90,27 +90,6 @@
         grid-gap: 20px;
     }
 
-<<<<<<< HEAD
-=======
-    header > div.title{
-        grid-column: 2 / span 2;
-    }
-
-    header > div.button-homepage {
-        grid-column: 2 / span 2;
-        grid-row: 2/ span 1;
-    }
-
-    header > svg.icon-logo {
-        position: relative;
-        top: 20vh;
-        width: 40vw;
-        left: 20px;
-        grid-column: 4 / span 2;
-        grid-row: 1 / span 2;
-    }
-
->>>>>>> bfa5a53912bec44b710374052aac8e22e1a8d535
     div.hr.active {
         border: 2px solid var(--orange-color);
         border-radius: 5px;
@@ -335,16 +314,6 @@
       /* fixe l'icon dans le menu active, empêche au scroll qu'il disparaisse */
     }
 
-    header > div.title{
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      margin:0;
-      padding: 0;
-      margin-top: 5vh;
-      margin-left: 10vw;
-    }
     /* MAIN */
 
     /* POSTIONNEMENT FOOTER */
