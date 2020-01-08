@@ -329,6 +329,7 @@ section.contact .map{
       text-align: right;
       padding: 0;
       margin:0;
+      margin-right:25px;
   }
 
   section.ws-right .ws-info{
@@ -441,6 +442,7 @@ section.contact .map{
   section.contact{
     display: grid;
     grid-template-columns: 1fr repeat(2,minmax(0,320px)) 1fr;
+    text-align: left;
   }
 
   section.contact .address_contact{
@@ -450,7 +452,7 @@ section.contact .map{
 
   section.contact div.address_contact{
       padding: 10px;
-      margin-right: 25%;
+      margin-right: 20vw;;
       margin-left: 20%;
   }
 
