@@ -1,11 +1,6 @@
 $(document).ready(function(){
 
-    // Redimenssionnement texte 
-
-    $('#title').css('font-size', $(window).width() / 32.5);
-    $(window).resize(function(){
-      $('#title').css('font-size', $(window).width() / 32.5);
-    });
+    // Redimenssionnement texte
 
     // Menu hamburger format mobile
 
@@ -23,8 +18,13 @@ $(document).ready(function(){
         $(this).toggleClass("active");
     });
 
+    // Animation bouton en savoir plus
+    $("section.ws-right .ws-info").hover(function(){
+        $("section.ws-right .ws-info > a").toggleClass("active");
+    });
 
-    // Nav soulignement orange 
+
+    // Nav soulignement orange
 
     $("header > #header_nav ul li a").hover(function(){
       $(this).children().toggleClass("active");
