@@ -28,5 +28,20 @@ $(document).ready(function(){
 
     $("header > #header_nav ul li a").hover(function(){
       $(this).children().toggleClass("active");
-    })
+    });
+
+
+    // Range Slider 
+
+    // TODO : adapter pour notre range slider
+    var rangeSlider = document.getElementById("form_nbpers");
+    var rangeBullet = document.getElementById("form_bulle");
+    
+    rangeBullet.innerHTML = "Nombre de personnes : " + rangeSlider.value;
+
+    rangeSlider.addEventListener("input", showSliderValue, false);
+
+    function showSliderValue() {
+      rangeBullet.innerHTML = "Nombre de personnes : " + rangeSlider.value;
+    }
 });
