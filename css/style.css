@@ -27,6 +27,10 @@ body{
     position: relative;
 }
 
+main{
+    min-height: 100vh;
+}
+
 /* TITLES */
 
 h1, h2, h3, h4, h5, h6{
@@ -40,14 +44,26 @@ h1{
     font-size: 6rem;
     margin: 0;
 }
+
 h2{
-    font-size: 3.75rem;
+    font-size: 5rem;
     line-height: 1.4;
 }
+
 h3{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
+h4{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+p{
+  color: var(--light-blue-color);
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
 
 /* LISTES */
 ul li {
@@ -78,19 +94,13 @@ header{
     justify-content: center;
     margin-bottom: 10vh;
 }
-
-header > div.title_homepage {
+header > div.title{
+    display: grid;
+    margin-top: 25vh;
+    margin-left: 10vw;
+    margin-bottom: -20vh;
     text-align: left;
-}
-
-header div.title_homepage p {
-    color: var(--light-blue-color);
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 1.7rem;
-    margin-bottom: 30px;
-}
-
+  }
 /* FOOTER */
 
 footer *{
@@ -111,17 +121,26 @@ iframe{
     border: none;
 }
 
-.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
-    fill: var(--dark-color);
-    fill-opacity: 1;
-}
-
-div.carousel-item > img{
-    object-fit: cover;
-}
-
 /* NAVIGUATION */
 
 header nav ul{
   text-transform: uppercase;
+}
+
+/* MDB changement */
+
+.custom-control-input:checked~.custom-control-label::before{
+    color: var(--main-color);
+    border-color: var(--dark-color);
+    background-color: var(--dark-color);
+}
+
+.custom-select, .custom-number{
+    border: 2px solid var(--dark-color);
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.md-form{
+    margin-bottom: 2.5rem;
 }

@@ -1,228 +1,181 @@
-/* ---- GLOBALE FORMAT DESKTOP ---- */
 
 body{
-    background: url(images/Backgroundbureau.svg) no-repeat;
+    background: url(images/Backgroundmobil.svg) no-repeat;
     background-size:100%;
-    max-width: 100%;
-    height: 100%;
 }
 
 /* HEADER */
 
-header > div.title_homepage{
-  display: grid;
-  margin-top: 25vh;
+header > svg.icon-logo {
+    margin-top: 15vh;
+    width: 50vw;
+    margin-right: -30vw;
+    margin-bottom: 20px;
+}
+
+header > div.title-homepage{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin:0;
+  padding: 0;
+  margin-top: 0vh;
   margin-left: 10vw;
-  margin-bottom: -32vh;
+  text-align: left;
 }
 
 header > div.button-homepage{
-  display: grid;
-  position: static;
-  margin-bottom: -35vh;
-  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-top: 15vh;
+  padding: 0;
+  margin-bottom: 25vh;
 }
 
-header > div.title_homepage p{
-  margin-top:0vh;
-  /*margin-top: -105px;*/
+header > div.button-homepage a{
+  width: 78%;
+}
+
+header > div.title-homepage p{
+  display: flex;
+  margin: 0;
   padding: 0;
+  width: 75%;
 }
 
 /* MAIN */
 
 main{
-    display: grid;
-    grid-gap: 20px;
-    justify-content: center;
-    grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
-    margin-bottom: 25vh;
-}
-
-section{
-    margin: 100px 0;
-}
-
-/* WORKSHOP */
-
-section.ws-right, section.ws-left {
-    position: relative;
-    display: grid;
-    grid-template-rows: minmax(0,auto);
-}
-
-section.ws-right .ws-info, section.ws-left .ws-info {
-    z-index: 1;
-    background-color: white;
-    position: absolute;
-    padding: 15px;
-    text-align: left;
-}
-
-.ws-annexe > p{
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.ws-annexe > a {
-    margin-top: 100px;
-}
-
-section.ws-left div.carousel-inner::after, section.ws-right div.carousel-inner::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
-}
-
-section.ws-right .ws-info > a {
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
+  margin-bottom: 10vh;
 }
 
 /* WORKSHOP TERMINES */
 
-section.ws-right .ws-annexe > h2, section.ws-right .ws-annexe > p {
-    text-align: left;
-}
-
-section.ws-right .ws-annexe > p{
-    color: var(--red-color);
-}
-
-section.ws-right div.carousel-inner::after{
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0.8) 100%);
-}
-
-section.ws-right{
-    grid-column: 2 / span 4;
-}
-
 section.ws-right .ws-annexe{
-    grid-column: 4 / span 1;
-    grid-row: 1;
-}
-section.ws-right .ws-annexe *{
-    position: relative;
-    z-index: 4;
-}
-section.ws-right .ws-annexe > p{
-    padding: 15px;
-}
-section.ws-right .ws-annexe > h2{
-    left: -50px;
-    padding: 15px;
+  margin-top: 15vh;
 }
 
-section.ws-right .ws-annexe > a{
-    right: 100px;
-}
-section.ws-right .ws-info{
-    left: 50px;
-    bottom: -20px;
-    height: 90px;
-    transition: 0.5s ease-in-out;
+section.ws-right .ws-info {
+    z-index: 1;
+    background-color: white;
+    padding: 15px;
+    text-align: left;
     width: 200px;
+    position: relative;
+    top: -20px;
+    left: 45%;
 }
-section.ws-right .ws-info.active{
-    height: 145px;
+
+section.ws-right .ws-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding:0;
+  padding-top: 10px;
 }
 
 section.ws-right .ws-info > a {
-    opacity: 0;
+  display: none;
 }
 
-section.ws-right .ws-info.active > a {
-    opacity: 1;
+section.ws-right .ws-annexe > h2, section.ws-right .ws-annexe > p {
+    text-align: right;
+    padding-left: 20vw;
+    padding-right: 10vw;
 }
-/* section.ws-right .ws-info:hover{
-    left: 50px;
-    top: 30vh;
-    height: 25vh;
-} */
-section.ws-right .ws_carrousel{
-    grid-column: 1 / span 3;
-    grid-row: 1;
+
+section.ws-right .ws-annexe > p{
+  color: var(--red-color);
+}
+
+section.ws-right .ws-btn{
+  margin-top: 50px;
+  margin-bottom: 10vh;
 }
 
 /* WORKSHOP A VENIR */
 
-section.ws-left .ws-annexe > h2, section.ws-left .ws-annexe > p {
-    text-align: right;
-}
-section.ws-left .ws-annexe > p{
-    color: var(--yellow-color);
-}
-
-section.ws-left .ws-info > p {
-    margin-bottom: 3rem;
-}
-
-section.ws-left div.carousel-inner::after{
-    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
-}
-
 section.ws-left{
-    grid-column: 1 / span 4;
+  margin-bottom: 10vh;
 }
 
-section.ws-left .ws-annexe{
-    grid-column: 1 / span 1;
-    grid-row: 1;
+section.ws-left .ws-annexe > h2, section.ws-left .ws-annexe > p {
+  text-align: left;
+  padding-left: 10vw;
+  padding-right: 20vw;
 }
-section.ws-left .ws-annexe *{
-    position: relative;
-    z-index: 4;
-}
+
 section.ws-left .ws-annexe > p{
-    padding: 15px;
+  color: var(--yellow-color);
 }
-section.ws-left .ws-annexe > h2 {
-    left: 50px;
+
+section.ws-left .ws-info {
+    z-index: 1;
+    background-color: white;
     padding: 15px;
-}
-section.ws-left .ws-info{
-    height: 145px;
-    bottom: -20px;
-    right: 20px;
+    text-align: left;
     width: 200px;
+    position: relative;
+    top: -80px;
+    left: 45%;
 }
-section.ws-left .ws_carrousel{
-    grid-column: 2 / span 3;
-    grid-row: 1;
+
+section.ws-left .ws-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding:0;
+  padding-top: 10px;
 }
-section.ws-left .ws-annexe > a{
-    left: 100px;
+
+section.ws-left .ws-info > a {
+  display: none;
+}
+
+section.ws-right .ws-btn{
+  margin-top: 50px;
+  margin-bottom: 10vh;
+}
+
+/* CARROUSEL */
+
+.carousel-indicators.car-red li {
+  background-color: var(--red-color);
+}
+.carousel-indicators.car-yellow li{
+  background-color: var(--yellow-color);
+}
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--dark-color);
+  fill-opacity: 1;
+}
+.carousel-indicators{
+  bottom: -140px!important;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 10;
+    padding-top: 5vh;
 }
 
 /* CONTACT */
 
 section.contact{
-    grid-column: 2 / span 3;
-    display: grid;
-    grid-template-rows: minmax(0,auto);
-    position: relative;
-}
-section.contact iframe{
-    grid-column: 2 / span 1;
-    grid-row: 1;
-}
-section.contact .address_contact{
-    grid-column: 3 / span 1;
-    grid-row: 1;
-}
-
-section.contact{
-    text-align: left;
+    text-align: right;
 }
 
 section.contact div.address_contact{
     font-size: 1.125rem;
-    padding-left: 50px;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-bottom: 20px;
 }
 
 section.contact div.address_contact h2{
@@ -237,89 +190,282 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
     text-transform: uppercase;
 }
 
-        /* CARROUSEL */
+section.contact .map{
+    margin-right: 10vw;
+    margin-left: 10vw;
+}
 
-.carousel-indicators.car-red li {
+
+/* ---- Responsive desktop Homepage ---- */
+@media screen and (min-width:850px){
+
+  body{
+      background: url(images/Backgroundbureau.svg) no-repeat;
+      background-size:100%;
+      max-width: 100%;
+      height: 100%;
+  }
+
+  /* HEADER */
+
+  header{
+    margin-bottom: 150px;
+  }
+
+  header > svg.icon-logo {
+    margin: 0;
+    padding: 0;
+    margin-top: 25vh;
+    width: 35vw;
+    grid-column: 5 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  header > div.title-homepage{
+    grid-column: 2 / span 3;
+    margin:0;
+    padding: 0;
+    margin-top: 25vh;
+    margin-left: 10vw;
+  }
+
+  header > div.title-homepage p{
+    font-weight: bold;
+    width: 100%;
+  }
+
+  header > div.button-homepage{
+    margin-left: 10vw;
+    width: 60%;
+    justify-content: flex-start;
+    padding: 0;
+    grid-column: 2 / span 3;
+    grid-row: 2/ span 1;
+  }
+
+  /* MAIN / WORKSHOP */
+
+  section.ws-right, section.ws-left{
+    display: grid;
+    grid-gap: 20px;
+    justify-content: center;
+    grid-template-columns: 1fr repeat(5,minmax(0,320px)) 1fr;
+    grid-template-rows: minmax(0,auto);
+  }
+
+  section.ws-left div.carousel-inner::after, section.ws-right div.carousel-inner::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  /* CARROUSEL */
+
+  .carousel-indicators.car-red li {
     background-color: var(--red-color);
-}
-.carousel-indicators.car-yellow li{
+  }
+  .carousel-indicators.car-yellow li{
     background-color: var(--yellow-color);
-}
-.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+  }
+  .carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
     width: 40px;
     height: 40px;
-}
-.carousel-indicators{
-    bottom: -50px!important;
-}
-
-
-    /* CAROUSEL RESPONSIVE */
-
-div.carousel-item{
-    position: relative;
-    width: 100%;
-    padding-top: 56.25%; /* 16:9 */
-}
-div.carousel-item > img {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+  }
+  .carousel-indicators{
     position: absolute;
-}
+    bottom: -10%!important;
+  }
 
-/* ---- Responsive mobile Homepage ---- */
-
-@media screen and (max-width:850px){
-
-    /* ELEMENTS */
-
-    body{
-        background: url(images/Backgroundmobil.svg) no-repeat;
-        background-size:100%;
-    }
-
-    /* WORKSHOP */
-
-    section.ws-right .ws-info, section.ws-left .ws-info{
-        width: 200px;
-        position: relative;
-        top: -145px;
-        left: 55%;
-    }
-
-    .ws-annexe > p {
-        font-size: 1rem;
-        margin-bottom: 50px;
-    }
-    .ws-annexe {
-        margin: 30px 0;
-    }
+  .carousel-control-prev, .carousel-control-next{
+    z-index: 10;
+    padding-top: 5%;
+  }
 
   /* WORKSHOP TERMINES */
 
-    section.ws-right .ws-annexe > h2, section.ws-right .ws-annexe > p {
-        padding-left: 10vw;
-        padding-right: 20px;
-    }
-    section.ws-right .ws-info {
-        height: 145px;
-    }
+  section.ws-right div.carousel-inner::after{
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0.8) 100%);
+  }
 
-            /* WORKSHOP A VENIR */
+  section.ws-right{
+      grid-row: 1;
+      padding-right: 10vw;
+      padding-left: 10vw;
+      margin-bottom: 10%;
+  }
 
-    section.ws-left .ws-annexe > h2, section.ws-left .ws-annexe > p {
-        padding-right: 10vw;
-        padding-left: 20px;
-    }
+  section.ws-right .ws_carrousel{
+      grid-column: 1 / span 5;
+      grid-row: 1;
+      margin-right: 5.3%;
+  }
 
-            /* CAROUSEL RESPONSIVE */
+  section.ws-right .ws-annexe{
+      grid-column: 6 / span 3;
+      grid-row: 1;
+      z-index: 2;
+      margin-top: 5vh;
+      margin-left: -8vw;
+  }
 
-    div.carousel-item{
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 10%;
-    }
+  section.ws-right .ws-btn{
+    z-index: 3;
+    position: absolute;
+    margin-left: 63vw;
+    margin-top: 40vh;
+    margin-right: 25px;
+  }
+
+  section.ws-right .ws-annexe h2{
+      text-align: left;
+      padding: 0;
+      margin:0;
+      margin-left: 12px;
+  }
+
+  section.ws-right .ws-annexe p{
+      text-align: right;
+      padding: 0;
+      margin:0;
+      margin-right:25px;
+  }
+
+  section.ws-right .ws-info{
+    position: relative;
+    transition: 0.5s ease-in-out;
+    width: 200px;
+    height: 135px;
+    margin-top: -50px;
+    left: 15%;
+    display: block;
+
+  }
+
+  section.ws-right .ws-info > ul > li{
+    font-size: 1.4rem ;
+  }
+
+  section.ws-right .ws-info > h4{
+    left: -50px;
+  }
+
+  section.ws-right .ws-info.active{
+    height: 185px;
+  }
+
+  section.ws-right .ws-info > a {
+      opacity: 0;
+  }
+
+  section.ws-right .ws-info.active > a {
+    margin: 0;
+    margin-left: 20px;
+    display: block;
+    opacity: 1;
+  }
+
+
+  /* WORKSHOP A VENIR */
+
+  section.ws-left div.carousel-inner::after{
+    background: linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4937325271905637) 50%, rgba(255,255,255,0) 100%);
+  }
+
+  section.ws-left{
+      grid-row: 1;
+      padding-right: 10vw;
+      padding-left: 10vw;
+  }
+
+  section.ws-left .ws_carrousel{
+      grid-column: 2 /span 6;
+      grid-row: 1;
+  }
+
+  section.ws-left .ws-annexe{
+      grid-column-start: 2;
+      grid-column-end: 1;
+      grid-row: 1;
+      z-index: 2;
+      margin-top: 5vh;
+      margin-right: -4vw;
+  }
+
+  section.ws-left .ws-btn{
+    z-index: 3;
+    position: absolute;
+    margin-top: 40vh;
+    margin-right: 25px;
+  }
+
+  section.ws-left .ws-annexe h2, section.ws-left .ws-annexe p{
+      text-align: right;
+      padding: 0;
+      margin:0;
+  }
+
+  section.ws-left .ws-annexe p{
+      text-align: left;
+      padding: 0;
+      margin:0;
+  }
+
+  section.ws-left .ws-info{
+    padding: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    width: 220px;
+    height: 240px;
+    margin-top: -100px;
+    left:63.5vw;
+    display: block;
+
+  }
+
+  section.ws-left .ws-info > ul > li{
+    font-size: 1.4rem ;
+  }
+
+  section.ws-left .ws-info > h4{
+    left: -50px;
+    margin-bottom: 20px;
+  }
+
+  section.ws-left .ws-info > a {
+      opacity: 0;
+  }
+
+    /* CONTACT */
+
+  section.contact{
+    display: grid;
+    grid-template-columns: 1fr repeat(2,minmax(0,320px)) 1fr;
+    text-align: left;
+  }
+
+  section.contact .address_contact{
+      grid-column: 3 / span 2;
+      grid-row: 1;
+  }
+
+  section.contact div.address_contact{
+      padding: 10px;
+      margin-right: 20vw;;
+      margin-left: 20%;
+  }
+
+  section.contact div.address_contact > h2{
+      margin-bottom: 65px;
+  }
+
+
+  section.contact .map{
+      grid-column: 1 / span 2;
+      grid-row: 1;
+      margin-left: 10vw;
+  }
+
 
 }

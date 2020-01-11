@@ -1,0 +1,188 @@
+:root{
+
+    /* COLORS */
+    --main-color: white;
+    --black-color: black;
+    --dark-color: #001C38;
+    --yellow-color:#FFC900;
+    --orange-color:#FF9928;
+    --red-color:#F9214C;
+    --blue-color:#0A5960;
+    --light-blue-color:#3891A0;
+
+}
+
+/* ---- GLOBALE FORMAT DESKTOP ---- */
+
+body{
+    /* background: url(images/Backgroundbureau.svg) no-repeat; */
+    background-size:100%;
+    max-width: 100%;
+    height: 100%;
+    text-align: inherit;
+}
+
+main{
+    margin-bottom: 50vh!important;
+}
+
+/* HEADER */
+
+.title > a.button-wscrea{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title > h1{
+    margin-bottom: 50px;
+}
+
+/* FORM */
+
+.md-form .prefix.active {
+    color: var(--dark-color); 
+    /* changement de MDB */
+}
+
+.ws-label-lg{
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}   
+
+
+
+.button-validation{
+    width: 50%;
+}
+  
+  /* ---- Responsive desktop Homepage ---- */
+@media screen and (min-width:850px){
+
+    /* MAIN */
+
+    main{
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+        grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
+        margin-bottom: 25vh;
+    }
+
+    /* POSITIONNEMENT */
+
+    main > form{
+        grid-column: 2 / span 3;
+    }
+
+    /* FORM */
+
+    .form_padding{
+        padding: 5rem!important;
+    }
+
+    .title_form{
+        font-size: 26px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        left: -50px;
+        padding-top: 45px;
+    }
+
+    .title_puce{
+        display: block;
+        background-color: var(--dark-color);        
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+
+    form > section.form_coordonnees, form > section.form_workshop{
+        border-left: 2px solid var(--dark-color);
+        margin-left: 1.5rem;        
+    }
+
+    form > section.form_workshop, form > section.form_infocomp{
+        margin-top: 10rem;
+    }
+
+    form > section.form_coordonnees{
+        margin-top: 5rem;
+    }
+
+    /* Changement Bootstrap */
+    .md-form label{
+        top: -10px; 
+        font-size: 1.5rem;
+    }
+}
+
+/* ---- Responsive mobile Homepage ---- */
+@media screen and (max-width:850px){
+
+    /* ELEMENTS */
+
+    body{
+        /* background: url(images/Backgroundmobil.svg) no-repeat; */
+        background-size:100%;
+    }
+
+    /* HEADER */
+
+    header > svg.icon-logo {
+        margin-top: 11vh;
+        width: 50vw;
+        margin-right: -30vw;
+    }
+
+    .title > a.button-wscrea{
+        width: 75%;
+        margin-right: 20px;
+    }
+
+    /* MAIN */
+    main{
+        margin-bottom: 25vh;
+    }
+
+    /* FORM */
+
+    .form_padding{
+        padding: 3rem!important;
+    }
+
+    .title_form{
+        font-size: 15px;
+        font-weight: normal;
+        text-transform: uppercase;
+        margin-left: 30px;
+    }
+
+    .title_puce{
+        display: block;
+        background-color: var(--dark-color);        
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+
+    .ws-label-lg{
+        font-size: 12px;
+        margin-bottom: 10px;
+    }    
+
+    form > section.form_coordonnees, form > section.form_workshop{
+        border-left: 2px solid var(--dark-color);
+        margin-left: 0.75rem;
+    }
+
+    /* Changement Bootstrap */
+    .md-form label{
+        top: -10px; 
+        font-size: 1rem;
+    }
+
+}
