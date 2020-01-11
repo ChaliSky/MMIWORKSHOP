@@ -22,7 +22,35 @@ header, main {
   width: 40vw;
 
 }
+/*filtre*/
+.filtre ul {
+ margin:0;
+ padding:0;
+ list-style-type:none;
+ text-align:center;
+ }
+.filtre li {
+ float:left;
+ margin:auto;
+ padding:0;
+ }
+.filtre li a {
+ display:block;
+ width:100px;
+ text-decoration:none;
+ padding:5px;
+ }
+ .filtre ul li ul {
+ display:none;
+ }
+ .filtre ul li:hover ul {
+ display:block;
 
+ }
+.filtre li:hover ul li {
+ float:none;
+ color: red;
+ }
 /*bouton*/
 .ws_annexe {
   display: flex;
@@ -34,7 +62,7 @@ header, main {
 }
 
 .ws_annexe a {
-  margin: 15px;
+  margin: 10px;
 }
 
 /*Projet*/
@@ -49,6 +77,10 @@ header, main {
 }
 .ws-info > p {
   margin-bottom: 10px;
+}
+
+main {
+  margin-bottom: 25vh;
 }
 /*Description Projet*/
 .ws-proj{
