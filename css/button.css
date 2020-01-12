@@ -6,13 +6,14 @@
 
 .ws-btn{
     text-transform: uppercase;
-    text-align: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     border-radius: 32px;
     justify-content: center;
     align-self: center;
-    padding: 15px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
     background-color: var(--main-color);
     display: inline-block;
 }
@@ -38,6 +39,7 @@
 .ws-btn-dark{
     color: var(--dark-color);
     border: solid 1px var(--dark-color);
+    text-align: center;
 }
 .ws-btn-dark:hover{
     background-color: var(--dark-color);

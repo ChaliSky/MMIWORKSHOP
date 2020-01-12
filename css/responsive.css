@@ -5,15 +5,23 @@
     /* HEADER */
 
     header > #header_nav a.logo{
-        position: absolute;
-        text-align: left;
-        top: 20px;
-        bottom: 0;
-        left: 20px;
-        font-weight: 700;
-        font-size: 1.3rem;
+        position:absolute;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items:center;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: -5vw;
         text-transform: uppercase;
-        display: block;
+        text-align: left;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    header > #header_nav a.logo img{
+        width: 20%;
+        height: 20%;
+        margin-right: 10px;
     }
 
     #header_nav{
@@ -78,26 +86,8 @@
 
     header{
         display: grid;
-        grid-template-columns: 1fr repeat(4,minmax(0,260px)) 1fr;
+        grid-template-columns: 1fr repeat(5,minmax(0,260px)) 1fr;
         grid-gap: 20px;
-    }
-
-    header > div.title{
-        grid-column: 2 / span 2;
-    }
-
-    header > div.button-homepage {
-        grid-column: 2 / span 2;
-        grid-row: 2/ span 1;
-    }
-
-    header > svg.icon-logo {
-        position: relative;
-        top: 20vh;
-        width: 40vw;
-        left: 20px;
-        grid-column: 4 / span 2;
-        grid-row: 1 / span 2;
     }
 
     div.hr.active {
@@ -125,11 +115,10 @@
     }
 
     .flux{
+      position: inherit;
       width: 100%;
       margin: 0px;
-      margin-top: -320px;
       padding: 0px;
-      padding-top: 50px;
     }
 
     div.footer-information{
@@ -139,6 +128,7 @@
       position: absolute;
       z-index: 1;
       width: 100%;
+      margin-top:-2px;
       padding-right: 10vw;
       padding-left: 10vw;
       padding-bottom: 6vw;
@@ -170,6 +160,24 @@
       display: none;
     }
 
+
+    /* WORKSHOP */
+
+    div.carousel-item{
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 */
+    }
+
+    div.carousel-item > img {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+        max-width: 100%
+    }
+
 }
 
 /* FORMAT MOBILE INFERIEUR A 850px */
@@ -177,11 +185,11 @@
 @media screen and (max-width:850px){
 
     h1{
-        font-size:3.6rem;
+        font-size:4rem;
     }
 
     h2{
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     h4{
@@ -189,10 +197,30 @@
     }
 
     p{
-      font-size: 1.2rem;
+      font-size: 1.5rem;
     }
 
     /* Mise en forme menu */
+
+    header > #header_nav a.logo{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items:center;
+        color: var(--main-color);
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: -15vh;
+    }
+
+    header > #header_nav a.logo img{
+        width: 30%;
+        height: 30%;
+    }
+
     header .nav_principale{
         position: fixed;
         top: 0;
@@ -204,6 +232,9 @@
         transform: translateX(100vW);
         visibility: hidden;
         z-index: 99;
+        width: 100vw;
+        margin:0;
+        padding: 0;
     }
     header .nav_principale.open {
         transform: translateX(0);
@@ -279,20 +310,10 @@
     }
 
     .nav-toggle.active{
-      position: fixed; 
+      position: fixed;
       /* fixe l'icon dans le menu active, empêche au scroll qu'il disparaisse */
     }
 
-    header > div.title{
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      margin:0;
-      padding: 0;
-      margin-top: 5vh;
-      margin-left: 10vw;
-    }
     /* MAIN */
 
     /* POSTIONNEMENT FOOTER */
@@ -314,22 +335,21 @@
     }
 
     .flux{
-      width: 100%;
+      width: 100vw;
       margin: 0px;
-      margin-top: -240px;
       padding: 0px;
-      padding-top: 100px;
+      position: inherit;
     }
 
     div.footer-information{
       z-index: 1;
       width: 100%;
-      padding: 10vh;
-      padding-top: 15vh;
+      padding-top: 8vh;
       padding-right: 10vh;
       padding-left: 20vw;
       background-color: var(--dark-color);
       text-align: left;
+      margin-top: -1px;
     }
 
     div.footer-logo *{
@@ -393,6 +413,26 @@
 
     #facebook, #instagram, #twitter{
       width: 5vw;
+    }
+
+    /* CAROUSEL RESPONSIVE */
+
+    div.carousel-item{
+      position: relative;
+      width: 75%;
+      margin-left: 13%;
+      margin-top: 10%;
+      padding-top: 56.25%; /* 16:9 */
+    }
+
+    div.carousel-item > img {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      object-fit: cover;
+      height: 100%;
     }
 
 }
