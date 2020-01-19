@@ -61,7 +61,7 @@ section.ws-right .ws-annexe{
 section.ws-right .ws-info {
     z-index: 1;
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: left;
     width: 200px;
     position: relative;
@@ -191,8 +191,10 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
 }
 
 section.contact .map{
-    margin-right: 10vw;
-    margin-left: 10vw;
+  margin-top: 5vh;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
 }
 
 
@@ -334,13 +336,18 @@ section.contact .map{
 
   section.ws-right .ws-info{
     position: relative;
-    transition: 0.5s ease-in-out;
-    width: 200px;
-    height: 135px;
-    margin-top: -50px;
+    width: 16vw;
+    height: 22vh;
+    margin-top: -100px;
     left: 15%;
     display: block;
+  }
 
+  section.ws-right .ws-info > a{
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 0;
   }
 
   section.ws-right .ws-info > ul > li{
@@ -349,21 +356,6 @@ section.contact .map{
 
   section.ws-right .ws-info > h4{
     left: -50px;
-  }
-
-  section.ws-right .ws-info.active{
-    height: 185px;
-  }
-
-  section.ws-right .ws-info > a {
-      opacity: 0;
-  }
-
-  section.ws-right .ws-info.active > a {
-    margin: 0;
-    margin-left: 20px;
-    display: block;
-    opacity: 1;
   }
 
 
@@ -415,11 +407,10 @@ section.contact .map{
   section.ws-left .ws-info{
     padding: 20px;
     position: relative;
-    transition: 0.5s ease-in-out;
-    width: 220px;
-    height: 240px;
+    width: 20vw;
+    height: 24vh;
     margin-top: -100px;
-    left:63.5vw;
+    left:55.5vw;
     display: block;
 
   }

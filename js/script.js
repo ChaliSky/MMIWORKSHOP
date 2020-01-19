@@ -13,17 +13,6 @@ $(document).ready(function(){
     }
     toggle.addEventListener('click', doToggle);
 
-    // Carousel Card Info
-    $("section.ws-right .ws-info").hover(function(){
-        $(this).toggleClass("active");
-    });
-
-    // Animation bouton en savoir plus
-    $("section.ws-right .ws-info").hover(function(){
-        $("section.ws-right .ws-info > a").toggleClass("active");
-    });
-
-
     // Nav soulignement orange
 
     $("header > #header_nav ul li a").hover(function(){
@@ -31,12 +20,12 @@ $(document).ready(function(){
     });
 
 
-    // Range Slider 
+    // Range Slider
 
     // TODO : adapter pour notre range slider
     var rangeSlider = document.getElementById("form_nbpers");
     var rangeBullet = document.getElementById("form_bulle");
-    
+
     rangeBullet.innerHTML = "Nombre de personnes : " + rangeSlider.value;
 
     rangeSlider.addEventListener("input", showSliderValue, false);
