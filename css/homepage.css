@@ -61,12 +61,13 @@ section.ws-right .ws-annexe{
 section.ws-right .ws-info {
     z-index: 1;
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     text-align: left;
     width: 200px;
     position: relative;
-    top: -20px;
+    margin-top: -15%;
     left: 45%;
+    margin-bottom: 10px;
 }
 
 section.ws-right .ws-info ul {
@@ -100,7 +101,8 @@ section.ws-right .ws-btn{
 /* WORKSHOP A VENIR */
 
 section.ws-left{
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
+  margin-top: 10vh;
 }
 
 section.ws-left .ws-annexe > h2, section.ws-left .ws-annexe > p {
@@ -162,7 +164,12 @@ section.ws-right .ws-btn{
 
 .carousel-control-prev, .carousel-control-next{
     z-index: 10;
-    padding-top: 5vh;
+    margin-top: -5vh;
+}
+
+.ws-left .carousel .carousel-control-prev, .ws-left .carousel .carousel-control-next{
+    z-index: 10;
+    margin-top: -15vh;
 }
 
 /* CONTACT */
@@ -191,8 +198,10 @@ section.contact div.address_contact h4, section.contact div.address_contact p{
 }
 
 section.contact .map{
-    margin-right: 10vw;
-    margin-left: 10vw;
+  margin-top: 5vh;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  margin-bottom: 10vh;
 }
 
 
@@ -275,12 +284,12 @@ section.contact .map{
   }
   .carousel-indicators{
     position: absolute;
-    bottom: -10%!important;
+    bottom: 10%!important;
   }
 
   .carousel-control-prev, .carousel-control-next{
     z-index: 10;
-    padding-top: 5%;
+    margin-top: -10%;
   }
 
   /* WORKSHOP TERMINES */
@@ -334,13 +343,18 @@ section.contact .map{
 
   section.ws-right .ws-info{
     position: relative;
-    transition: 0.5s ease-in-out;
-    width: 200px;
-    height: 135px;
-    margin-top: -50px;
-    left: 15%;
+    width: 18vw;
+    height: 26vh;
+    margin-top: -100px;
+    left: 5%;
     display: block;
+  }
 
+  section.ws-right .ws-info > a{
+    display: block;
+    position: relative;
+    margin-top: 30px;
+    margin-left: 0;
   }
 
   section.ws-right .ws-info > ul > li{
@@ -349,21 +363,6 @@ section.contact .map{
 
   section.ws-right .ws-info > h4{
     left: -50px;
-  }
-
-  section.ws-right .ws-info.active{
-    height: 185px;
-  }
-
-  section.ws-right .ws-info > a {
-      opacity: 0;
-  }
-
-  section.ws-right .ws-info.active > a {
-    margin: 0;
-    margin-left: 20px;
-    display: block;
-    opacity: 1;
   }
 
 
@@ -388,7 +387,7 @@ section.contact .map{
       grid-column-start: 2;
       grid-column-end: 1;
       grid-row: 1;
-      z-index: 2;
+      z-index: 99;
       margin-top: 5vh;
       margin-right: -4vw;
   }
@@ -415,11 +414,10 @@ section.contact .map{
   section.ws-left .ws-info{
     padding: 20px;
     position: relative;
-    transition: 0.5s ease-in-out;
-    width: 220px;
-    height: 240px;
-    margin-top: -100px;
-    left:63.5vw;
+    width: 20vw;
+    height: 24vh;
+    margin-top: -60px;
+    left:39vw;
     display: block;
 
   }
