@@ -20,9 +20,7 @@ $(document).ready(function(){
     });
 
 
-    // Range Slider
-
-    // TODO : adapter pour notre range slider
+    // Range Slider 
     var rangeSlider = document.getElementById("form_nbpers");
     var rangeBullet = document.getElementById("form_bulle");
 
