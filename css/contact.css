@@ -1,0 +1,74 @@
+:root{
+
+    /* COLORS */
+    --main-color: white;
+    --black-color: black;
+    --dark-color: #001C38;
+    --yellow-color:#FFC900;
+    --orange-color:#FF9928;
+    --red-color:#F9214C;
+    --blue-color:#0A5960;
+    --light-blue-color:#3891A0;
+
+}
+
+/* ---- GLOBALE FORMAT DESKTOP ---- */
+
+body{
+    background: url(images/Backgroundmobil.svg) no-repeat;
+    background-size:100%;
+}
+
+main{
+    min-height: 50vh;
+}
+
+header{
+    margin-bottom: 150px;
+}
+
+.title > h1{
+    margin-bottom: 50px;
+}
+
+
+.form-contact div.border{
+    padding: 10px;
+    border: solid 1px var(--dark-color);
+    border-radius: 5px;
+    background-color: var(--main-color);
+}
+
+.info-contact h3{
+    color: var(--orange-color);
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.info-contact address{
+    font-size: 14px;
+}
+
+  /* ---- Responsive desktop Homepage ---- */
+@media screen and (min-width:850px){
+
+    body{
+        background: url(images/Contact.svg) no-repeat;
+        background-size:100%;
+        max-width: 100%;
+        height: 100%;
+        text-align: inherit;
+    }
+
+    header > div.title{
+        grid-column: 2 / span 2;
+    }
+    
+    .form-contact h1 {
+        font-size: 40px;
+    }
+
+    .info-contact address{
+        font-size: 20px;
+    }
+}

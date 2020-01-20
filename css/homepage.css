@@ -6,13 +6,6 @@ body{
 
 /* HEADER */
 
-header > svg.icon-logo {
-    margin-top: 15vh;
-    width: 50vw;
-    margin-right: -30vw;
-    margin-bottom: 20px;
-}
-
 header > div.title-homepage{
   display: flex;
   align-items: flex-start;
@@ -219,15 +212,6 @@ section.contact .map{
 
   header{
     margin-bottom: 150px;
-  }
-
-  header > svg.icon-logo {
-    margin: 0;
-    padding: 0;
-    margin-top: 25vh;
-    width: 35vw;
-    grid-column: 5 / span 2;
-    grid-row: 1 / span 2;
   }
 
   header > div.title-homepage{

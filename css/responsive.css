@@ -4,6 +4,15 @@
 
     /* HEADER */
 
+    header > svg.icon-logo {
+      margin: 0;
+      padding: 0;
+      margin-top: 25vh;
+      width: 35vw;
+      grid-column: 5 / span 2;
+      grid-row: 1 / span 2;
+    }
+
     header > #header_nav a.logo{
         position:absolute;
         display: flex;
@@ -199,6 +208,13 @@
 
     p{
       font-size: 1.5rem;
+    }
+
+    header > svg.icon-logo {
+      margin-top: 15vh;
+      width: 50vw;
+      margin-right: -30vw;
+      margin-bottom: 20px;
     }
 
     /* Mise en forme menu */

@@ -15,11 +15,8 @@
 /* ---- GLOBALE FORMAT DESKTOP ---- */
 
 body{
-    /* background: url(images/Backgroundbureau.svg) no-repeat; */
+    background: url(images/Backgroundmobil.svg) no-repeat;
     background-size:100%;
-    max-width: 100%;
-    height: 100%;
-    text-align: inherit;
 }
 
 main{
@@ -27,6 +24,11 @@ main{
 }
 
 /* HEADER */
+
+header{
+    margin-bottom: 150px;
+}
+
 
 .title > a.button-wscrea{
     width: 100%;
@@ -60,6 +62,15 @@ main{
   /* ---- Responsive desktop Homepage ---- */
 @media screen and (min-width:850px){
 
+    body{
+        background: url(images/creaWS.svg) no-repeat;
+        background-size:100%;
+        max-width: 100%;
+        height: 100%;
+        text-align: inherit;
+    }
+    
+
     /* MAIN */
 
     main{
@@ -68,6 +79,10 @@ main{
         justify-content: center;
         grid-template-columns: 1fr repeat(3,minmax(0,320px)) 1fr;
         margin-bottom: 25vh;
+    }
+
+    header > svg.icon-logo{   
+        grid-column: 4 / span 2;
     }
 
     /* POSITIONNEMENT */
@@ -131,12 +146,6 @@ main{
     }
 
     /* HEADER */
-
-    header > svg.icon-logo {
-        margin-top: 11vh;
-        width: 50vw;
-        margin-right: -30vw;
-    }
 
     .title > a.button-wscrea{
         width: 75%;
