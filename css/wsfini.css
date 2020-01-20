@@ -1,26 +1,40 @@
-body {
+/*------------WORKSHOP FINI----------------*/
+.rose {
   background: url(images/BackgroundmobilWSterm.svg) no-repeat;
   background-size:100%;
 }
 
+}
 h1 {
   font-size: 3rem;
   text-align: left;
   margin: 40px;
-  margin-top: 20vh;
+  margin-left: 100px;
+  padding-bottom: 40px;
 }
 
 header, main {
   padding: 20px;
 }
 
-.ws-btn-red, .ws-btn-yellow{
-  padding: 20px 85px;
+p{
+  color: var(--dark-color);
+  text-transform: inherit;
+  text-align: left;
+  font-size: 1.2rem;
 }
-/*header> svg.icon_logo {
-  height: 40vh;
-  width: 40vw;
 
+.tete{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.titrepage{
+  grid-column: 1;
+}
+.btnws{
+  grid-column: 2;
+  margin: 0px
 }
 /*filtre*/
 .filtre ul {
@@ -30,13 +44,12 @@ header, main {
  text-align:center;
  }
 .filtre li {
- float:left;
+
  margin:auto;
  padding:0;
  }
 .filtre li a {
  display:block;
- width:100px;
  text-decoration:none;
  padding:5px;
  }
@@ -44,13 +57,26 @@ header, main {
  display:none;
  }
  .filtre ul li:hover ul {
- display:block;
+   display: flex;
+   flex-direction: row;
 
  }
-.filtre li:hover ul li {
- float:none;
- color: red;
+.filtre li ul li {
+  color: var(--dark-color);
+  background-color: var(--main-color);
+  border: solid 1px var(--dark-color);
+  text-align: center;
+  border-radius: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
  }
+
+ .filtre li ul li:hover{
+   color: var(--main-color);
+   background-color: var(--dark-color);
+  }
+
 /*bouton*/
 .ws_annexe {
   display: flex;
@@ -67,27 +93,43 @@ header, main {
 
 /*Projet*/
 /*Titre*/
-.ws-info > h4 {
+.Projet_1{
+  margin-bottom: 50px;
+}
+.Projet_1 > h4 {
   font-size: 3rem;
-  
   text-align: left;
   padding: 10px;
   padding-left: 0px;
   z-index: 10;
+
+}
+.Projet_1 .mise-en-avant{
+  width: 65vw;
 }
 .ws-info > p {
   margin-bottom: 10px;
+}
+.wsarticle{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 main {
   margin-bottom: 25vh;
 }
-/*Description Projet*/
+.ws-left, .filtre{
+  padding: 20px;
+  padding-left: 40px;
+}
 .ws-proj{
+  grid-column: 2;
   padding: 20px;
   text-align: center;
   background-color: var(--main-color);
-  margin-bottom: 50px
+  margin-bottom: 50px;
+  margin-left: -40px;
 }
 .ws-proj ul {
   padding: 0px;
@@ -108,7 +150,47 @@ main {
 }
 
 .ws-btn.ws-btn-dark {
-  align-items: center;
+  align-items: flex-end;
   padding: 10px;
+  max-width: 30vw;
 
+}
+/*------------------------WORKSHOP A VENIR-----------*/
+.jaune {
+  background: url(images/BackgroundmobilWSfini.svg) no-repeat;
+  background-size:100%;
+}
+
+.Projet_2 .mise-en-avant{
+  width: 35vw;
+}
+.Projet_2{
+  margin-bottom: 50px;
+}
+.Projet_2 > h4 {
+  font-size: 3rem;
+  text-align: left;
+  padding: 10px;
+  padding-left: 0px;
+  z-index: 10;
+}
+.wsarticle2{
+  display: grid;
+  grid-template-columns: 35vw 1fr;
+  align-items: start;
+}
+
+.ws-jaune{
+  margin-top: 30px;
+  margin-left: -80px;
+}
+h5{
+  text-align: left;
+  margin-bottom: 10px;
+}
+.ws-jaune ul {
+text-align: left;
+}
+.ws-jaune ul li {
+margin-left: 0;
 }

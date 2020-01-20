@@ -15,8 +15,8 @@
     <!-- Perso CSS -->
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/wsfini.css">
     <link rel="stylesheet" href="css/button.css">
+      <link rel="stylesheet" href="css/wsfini.css">
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
@@ -28,8 +28,7 @@
 
     <script type="text/javascript" src="js/script.js"></script>
   </head>
-  <body>
-    <!-- Début du header -->
+  <body class="rose">
     <!-- Début du header -->
     <header>
       <div class="nav-toggle">
@@ -45,17 +44,19 @@
           <li><a href="apropos.html">A propos <div class="hr"></div></a></li>
         </ul>
       </nav>
-      <h1 id="Titre_WORKSHOP">Nos<br> Workshops</h1>
-        <div class="ws_annexe">
-            <a class="button_termines ws-btn ws-btn-red z-depth-1" href="#">Nos workshops terminés</a>
-            <a class="button_a_venir ws-btn ws-btn-yellow z-depth-1" href="#">Nos workshops à venir</a>
-        </div>
       </header>
       <!-- Fin du header -->
     <main>
+      <section class="tete">
+      <h1 class="titrepage"id="Titre_WORKSHOP">Nos<br> Workshops</h1>
+        <div class=" btnws ws_annexe">
+            <a class="button_termines ws-btn ws-btn-red z-depth-1" href="#">Nos workshops terminés</a>
+            <a class="button_a_venir ws-btn ws-btn-yellow z-depth-1" href="#">Nos workshops à venir</a>
+        </div>
+      </section>
       <div class="filtre">
         <ul>
-          <li><a class="ws-btn ws-btn-dark" href="#">Filtrer par thème ▼ </a>
+          <li><a class="filtre ws-btn ws-btn-dark" href="#">Filtrer par thème ▼ </a>
             <ul>
               <li><a href="#">Comunication</a></li>
               <li><a href="#">Design</a></li>
@@ -66,12 +67,46 @@
           </li>
         </ul>
       </div>
-      <section class="ws-right">
+      <section class="ws-left">
         <article class="Projet_1">
-          <div class="ws-info">
-            <h4><a href="#" >Nom du projet</a></h4>
-            <img src="./img/WS_TEAM.jpg" alt="">
-            <div class="ws-proj z-depth-1">
+          <h4><a href="#" >Nom du projet</a></h4>
+          <div class="wsarticle ws-info">
+            <img class="mise-en-avant"src="./img/WS_TEAM.jpg" alt="">
+            <div class="descrip ws-proj z-depth-1">
+              <ul>
+                <li><img src="./img/Format mobile/icones/Date.svg" alt="Fait le :" height="10px" width="20px"/><br>20/09/2019</li>
+                <li><img src="./img/Format mobile/icones/Crayon.svg" alt="Créateur :" height="50px" width="20px"/><br>Elisa DUBOIS</li>
+                <li><img src="./img/Format mobile/icones/Ordinateur.svg" alt="Thème :" height="50px" width="20px"/><br>Numérique</li>
+                <li><img src="./img/Format mobile/icones/Chrono.svg" alt="Durée :" height="50px" width="20px"/><br>3 demi-j</li>
+                <li><img src="./img/Format mobile/icones/Profil.svg" alt="Nombre de personnes :" height="50px" width="20px"/><br>25</li>
+              </ul>
+              <p>Description : Découverte des différentes étapes de création d'un projet d'entreprise, étude des concurrents, cibles et créations de différents personas. L'objectif est la réalisation d'une maquette d’application ou de site web fini et abouti.</p>
+              <a class="ws-btn ws-btn-dark"href="#">En savoir plus +</a>
+            </div>
+          </div>
+        </article>
+        <article class="Projet_1">
+          <h4><a href="#" >Nom du projet</a></h4>
+          <div class="wsarticle ws-info">
+            <img class="mise-en-avant"src="./img/WS_TEAM.jpg" alt="">
+            <div class="descrip ws-proj z-depth-1">
+              <ul>
+                <li><img src="./img/Format mobile/icones/Date.svg" alt="Fait le :" height="10px" width="20px"/><br>20/09/2019</li>
+                <li><img src="./img/Format mobile/icones/Crayon.svg" alt="Créateur :" height="50px" width="20px"/><br>Elisa DUBOIS</li>
+                <li><img src="./img/Format mobile/icones/Ordinateur.svg" alt="Thème :" height="50px" width="20px"/><br>Numérique</li>
+                <li><img src="./img/Format mobile/icones/Chrono.svg" alt="Durée :" height="50px" width="20px"/><br>3 demi-j</li>
+                <li><img src="./img/Format mobile/icones/Profil.svg" alt="Nombre de personnes :" height="50px" width="20px"/><br>25</li>
+              </ul>
+              <p>Description : Découverte des différentes étapes de création d'un projet d'entreprise, étude des concurrents, cibles et créations de différents personas. L'objectif est la réalisation d'une maquette d’application ou de site web fini et abouti.</p>
+              <a class="ws-btn ws-btn-dark"href="#">En savoir plus +</a>
+            </div>
+          </div>
+        </article>
+        <article class="Projet_1">
+          <h4><a href="#" >Nom du projet</a></h4>
+          <div class="wsarticle ws-info">
+            <img class="mise-en-avant"src="./img/WS_TEAM.jpg" alt="">
+            <div class="descrip ws-proj z-depth-1">
               <ul>
                 <li><img src="./img/Format mobile/icones/Date.svg" alt="Fait le :" height="10px" width="20px"/><br>20/09/2019</li>
                 <li><img src="./img/Format mobile/icones/Crayon.svg" alt="Créateur :" height="50px" width="20px"/><br>Elisa DUBOIS</li>
