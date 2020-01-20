@@ -65,8 +65,9 @@ section.ws-right .ws-info {
     text-align: left;
     width: 200px;
     position: relative;
-    top: -20px;
+    margin-top: -15%;
     left: 45%;
+    margin-bottom: 10px;
 }
 
 section.ws-right .ws-info ul {
@@ -100,7 +101,8 @@ section.ws-right .ws-btn{
 /* WORKSHOP A VENIR */
 
 section.ws-left{
-  margin-bottom: 10vh;
+  margin-bottom: 20vh;
+  margin-top: 10vh;
 }
 
 section.ws-left .ws-annexe > h2, section.ws-left .ws-annexe > p {
@@ -162,7 +164,12 @@ section.ws-right .ws-btn{
 
 .carousel-control-prev, .carousel-control-next{
     z-index: 10;
-    padding-top: 5vh;
+    margin-top: -5vh;
+}
+
+.ws-left .carousel .carousel-control-prev, .ws-left .carousel .carousel-control-next{
+    z-index: 10;
+    margin-top: -15vh;
 }
 
 /* CONTACT */
@@ -277,12 +284,12 @@ section.contact .map{
   }
   .carousel-indicators{
     position: absolute;
-    bottom: -10%!important;
+    bottom: 10%!important;
   }
 
   .carousel-control-prev, .carousel-control-next{
     z-index: 10;
-    padding-top: 5%;
+    margin-top: -10%;
   }
 
   /* WORKSHOP TERMINES */
@@ -336,10 +343,10 @@ section.contact .map{
 
   section.ws-right .ws-info{
     position: relative;
-    width: 16vw;
-    height: 22vh;
+    width: 18vw;
+    height: 26vh;
     margin-top: -100px;
-    left: 15%;
+    left: 5%;
     display: block;
   }
 
@@ -380,7 +387,7 @@ section.contact .map{
       grid-column-start: 2;
       grid-column-end: 1;
       grid-row: 1;
-      z-index: 2;
+      z-index: 99;
       margin-top: 5vh;
       margin-right: -4vw;
   }
@@ -409,8 +416,8 @@ section.contact .map{
     position: relative;
     width: 20vw;
     height: 24vh;
-    margin-top: -100px;
-    left:55.5vw;
+    margin-top: -60px;
+    left:39vw;
     display: block;
 
   }
