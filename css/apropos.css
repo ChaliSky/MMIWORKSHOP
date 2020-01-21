@@ -15,7 +15,7 @@
 /* ---- GLOBALE FORMAT DESKTOP ---- */
 
 body{
-    background: url(images/fondmonbileapropos.svg) no-repeat;
+    background: url(images/fondmobilapropos.svg) no-repeat;
     background-size:100%;
 }
 
@@ -66,7 +66,7 @@ header > svg.icon-logo {
 @media screen and (min-width:850px){
 
     body{
-        background: url(images/Contact.svg) no-repeat;
+        background: url(images/fondbureauapropos.svg) no-repeat;
         background-size:100%;
         max-width: 100%;
         height: 100%;
