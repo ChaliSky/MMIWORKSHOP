@@ -1,13 +1,13 @@
-/*body {
-  background: url(images/BackgroundmobilWSterm.svg) no-repeat;
-  background-size:100%;
-}*/
+
+/*------------WORKSHOP FINImobil----------------*/
+
+body {
+  text-align: left;
+}
 
 h1 {
   font-size: 4rem;
     text-align: left;
-    position: absolute;
-    margin-top: -72px;
     max-width: 40vw;
 
 }
@@ -18,110 +18,164 @@ h2{
     max-width: 40vw;
 }
 
-main {
-  padding: 50px;
-  padding-top: 20vh;
+.description_workshop, .icontype, h1, .contenttype, .materiel, .form_padding{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
  ul{
    display: flex;
    justify-content: space-between;
    margin-top: 20px;
+   padding-left: 0;
  }
 
 
 ul li {
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
+  text-align: center;
 }
 
 ul li img {
-  height: 30px;
-  display: flex;
-  margin: 10px;
-}
+  height: 40px;
 
-/*-haut de page - ppage type-------------*/
-.hautpagetype{
-  display: grid;
-  grid-template-columns: 50vw 1fr;
-  align-items: start;
-  grid-column-gap: 20px;
-}
 
-.titreimg{
-  grid-column: 1;
 }
-
-.contenttype{
-  grid-column: 2;
-  text-align: left;
-}
-
 .wstype p{
   color: var(--dark-color);
   text-transform: inherit;
   text-align: left;
   font-size: 1.2rem;
 }
-
+#Image_secondaire {
+    max-width: 40vw;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+    margin-left: 0;
+}
 .galerie img{
-  width: 15vw;
+    max-width: 40vw;
+    height: auto;
+    display:inline-block;
+    justify-content: left;
   margin: 5px;
 }
 
-.description_workshop {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  grid-row: 20vh 20vh;
-  align-items: start;
-  grid-column-gap: 10px;
-  margin-top: 50px;
+.galerie{
+  justify-content: center;
 }
 
-.Info_complémentaires{
-  grid-column: 1;
-  grid-row: 1 / span 2;
+.materiel{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
-.galerie {
-  grid-column: 2 / span 3;
-  grid-row: 1 / span 2;
-}
-
-
-.materiel {
-   margin-top: 30px;
-   margin-bottom: 30px;
+ .icontype ul {
    display: grid;
-  grid-template-columns: 1fr 1fr;
-   align-items: start;
-   grid-column-gap: 20px;
-}
+   grid-template-columns: 30vw 30vw 30vw;
+   margin-top: 20px;
+   margin-bottom: 40px;
+ }
+ .icontype ul li{
+  justify-content: center;
+ }
+ .materiel ul li img{
+    height: 30px;
+    justify-content: center;
+    margin-right: 0;
+ }
 
-.materiel ul {
-   justify-content: flex-start;
-   padding-left: 0;
-   grid-column: 1;
-}
-.materiel h4 {
-  display: flex;
-   justify-content: flex-start;
-   grid-column: 1;
-}
-.materiel ul li{
-   margin: 10px;
-}
-.materiel ul li img{
-   height: 20px;
-   justify-content: center;
-   margin-right: 0;
-}
-.materiel button{
-   grid-column: 2;
-}
+ .materiel .ws-btn{
+   display: flex;
+   align-items: center;
+   margin-top: 30px;
+ }
 
-.Inscription button{
-  padding-left: 50px;
-  padding-right: 50px;
+ .titreimg img{
+   margin: 0;
+ }
+/*------------WORKSHOP FINI bureau----------------*/
+@media screen and (min-width:850px){
+    main {
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    .hautpagetype{
+      display: grid;
+      grid-template-columns: 50vw 1fr;
+      align-items: start;
+      grid-column-gap: 20px;
+    }
+
+    .titreimg{
+      grid-column: 1;
+    }
+
+    .contenttype{
+      grid-column: 2;
+      text-align: left;
+    }
+    .galerie img{
+      width: 15vw;
+      margin: 5px;
+    }
+
+    .description_workshop {
+      display: grid;
+      grid-template-columns: 2fr 3fr;
+      grid-row: 20vh 20vh;
+      align-items: start;
+      grid-column-gap: 10px;
+      margin-top: 50px;
+    }
+
+    .Info_complémentaires{
+      grid-column: 1;
+      grid-row: 1 / span 2;
+    }
+
+    .galerie {
+      grid-column: 2 / span 3;
+      grid-row: 1 / span 2;
+    }
+
+
+    .materiel {
+       margin-top: 30px;
+       margin-bottom: 30px;
+       display: grid;
+      grid-template-columns: 1fr 1fr;
+       align-items: start;
+       grid-column-gap: 20px;
+    }
+
+    .materiel ul {
+       justify-content: flex-start;
+       padding-left: 0;
+       grid-column: 1;
+    }
+    .materiel h4 {
+      display: flex;
+       justify-content: flex-start;
+       grid-column: 1;
+    }
+    .materiel ul li{
+       margin: 10px;
+    }
+
+    .materiel button{
+       grid-column: 2;
+    }
+
+    .Inscription button{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    .icontype ul {
+      display: flex;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
 }
