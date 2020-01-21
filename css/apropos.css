@@ -1,0 +1,100 @@
+:root{
+
+    /* COLORS */
+    --main-color: white;
+    --black-color: black;
+    --dark-color: #001C38;
+    --yellow-color:#FFC900;
+    --orange-color:#FF9928;
+    --red-color:#F9214C;
+    --blue-color:#0A5960;
+    --light-blue-color:#3891A0;
+
+}
+
+/* ---- GLOBALE FORMAT DESKTOP ---- */
+
+body{
+    background: url(images/fondmonbileapropos.svg) no-repeat;
+    background-size:100%;
+}
+
+main{
+    min-height: 50vh;
+}
+
+header{
+    margin-bottom: 150px;
+}
+
+.title > h1{
+    margin-bottom: 50px;
+}
+
+
+header > div.info-projet {
+    margin-top: 22vh;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: justify;
+  }
+
+.info-projet h3{
+    color: var(--orange-color);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-projet p{
+    text-transform: none;
+    color: var(--dark-color);
+    font-size: 14px;
+}
+
+header > svg.icon-logo {
+    display: block;
+    margin-top: 0;
+    padding-top: 15vh;
+    width: 50vw;
+    margin-left: 30vw;
+    margin-bottom: 20px;
+}
+
+
+  /* ---- Responsive desktop Homepage ---- */
+@media screen and (min-width:850px){
+
+    body{
+        background: url(images/Contact.svg) no-repeat;
+        background-size:100%;
+        max-width: 100%;
+        height: 100%;
+        text-align: inherit;
+    }
+
+    header > div.info-projet {
+        margin: 0;
+        padding: 0;
+        margin-top: 25vh;
+        width: 35vw;
+        grid-column:  5 / span 2;
+        grid-row: 1 / span 2;
+      }
+
+    header > div.title{
+        grid-column: 2 / span 3;
+    }
+
+    .info-projet h3{
+        font-size: 22px;
+    }
+    
+    .info-projet p{
+        font-size: 16px;
+    }
+
+    header > svg.icon-logo{
+        display: none;
+    }
+}
